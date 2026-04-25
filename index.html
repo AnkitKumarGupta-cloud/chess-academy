@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ankit Kumar Gupta — Master the Game of Kings | Chess Coaching Bangalore</title>
+<meta name="description" content="World-class chess coaching by Ankit Kumar Gupta — FIDE-certified coach in Bangalore, Karnataka. Beginner to advanced programs, online & in-person. First class free!">
+<meta name="keywords" content="chess coaching Bangalore, chess classes Karnataka, FIDE coach India, online chess lessons, chess for kids, tournament preparation">
+<meta property="og:title" content="Ankit Kumar Gupta — Master the Game of Kings">
+<meta property="og:description" content="FIDE-certified chess coaching in Bangalore. Beginner to advanced. Online & in-person. First class free!">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1200&q=80">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Ankit Kumar Gupta — Chess Coaching Bangalore">
+<meta name="twitter:description" content="FIDE-certified chess coaching. Beginner to advanced. First class free!">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#080808;--chalk:#f6f3ec;--gold:#c9a84c;--gold-hi:#e8c97a;--gold-lo:#8a6820;--slate:#1e1e1e;--mid:#4a4a4a;--mist:#d0ccc2;--cream:#faf7f0;--r:3px;--board-light:#f0d9b5;--board-dark:#b58863}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden}
+::selection{background:var(--gold);color:var(--ink)}
+#pb{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,var(--gold-lo),var(--gold),var(--gold-hi));z-index:9999;transition:width .1s linear}
+.tkw{background:var(--gold);padding:10px 0;overflow:hidden;position:relative;z-index:998}
+.tkt{display:flex;animation:tick 36s linear infinite;width:max-content}
+.tki{white-space:nowrap;padding:0 48px;font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;display:flex;align-items:center;gap:12px}
+.tks{color:var(--gold-lo);font-size:18px}
+@keyframes tick{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+nav{position:fixed;top:41px;left:0;right:0;z-index:997;background:rgba(8,8,8,.97);backdrop-filter:blur(16px);border-bottom:1px solid rgba(201,168,76,.2);padding:0 48px;display:flex;align-items:center;justify-content:space-between;height:68px;transition:top .3s}
+.nbrand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.nking{font-size:28px;animation:nkf 4s ease-in-out infinite}
+@keyframes nkf{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+.nname{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;color:var(--gold)}
+.nname em{color:var(--chalk);font-style:normal;font-weight:400}
+.nlinks{display:flex;align-items:center;gap:20px;list-style:none}
+.nlinks a{color:rgba(246,243,236,.65);text-decoration:none;font-size:12px;font-weight:500;letter-spacing:.8px;text-transform:uppercase;transition:color .2s;position:relative}
+.nlinks a::after{content:'';position:absolute;bottom:-4px;left:0;right:0;height:1px;background:var(--gold);transform:scaleX(0);transition:transform .25s}
+.nlinks a:hover{color:var(--gold)}
+.nlinks a:hover::after{transform:scaleX(1)}
+.ncta{background:var(--gold)!important;color:var(--ink)!important;padding:9px 22px;border-radius:var(--r);font-weight:700!important}
+.ncta::after{display:none!important}
+.ncta:hover{background:var(--gold-hi)!important}
+.hbg{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.hbg span{width:26px;height:2px;background:var(--chalk);transition:all .35s;transform-origin:center}
+.hbg.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hbg.open span:nth-child(2){opacity:0}
+.hbg.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+.mobnav{display:none;position:fixed;inset:0;background:var(--ink);z-index:996;flex-direction:column;align-items:center;justify-content:center;gap:40px}
+.mobnav.open{display:flex}
+.mobnav a{font-family:'Playfair Display',serif;font-size:32px;font-weight:700;color:var(--chalk);text-decoration:none;transition:color .2s}
+.mobnav a:hover{color:var(--gold)}
+#hero{min-height:100vh;background:var(--ink);position:relative;overflow:hidden;display:flex;align-items:center;padding-top:109px;padding-bottom:80px;}
+.hbg-img{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1600&q=80');background-size:cover;background-position:center;filter:brightness(.2) saturate(.5);transform:scale(1.06);animation:hzoom 18s ease-in-out infinite alternate}
+@keyframes hzoom{from{transform:scale(1.06)}to{transform:scale(1.13)}}
+.hgrid{position:absolute;inset:0;background-image:repeating-conic-gradient(rgba(255,255,255,.025) 0% 25%,transparent 0% 50%);background-size:64px 64px}
+.hvig{position:absolute;inset:0;background:radial-gradient(ellipse 70% 80% at 35% 50%,rgba(201,168,76,.07) 0%,transparent 65%),linear-gradient(105deg,rgba(8,8,8,.93) 0%,rgba(8,8,8,.52) 55%,rgba(8,8,8,.82) 100%)}
+.pfloat{position:absolute;font-size:80px;animation:pf var(--d,8s) ease-in-out infinite;opacity:.07;pointer-events:none;color:var(--gold)}
+@keyframes pf{0%,100%{transform:translateY(0) rotate(0deg)}50%{transform:translateY(-22px) rotate(5deg)}}
+.hcont{position:relative;z-index:2;padding:0 80px;max-width:720px}
+.hpill{display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);border-radius:40px;padding:8px 20px;font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:32px;animation:fu .7s ease both}
+.shine{color:var(--gold);position:relative;display:inline-block}
+.htagl{font-family:'Cormorant Garamond',serif;font-size:clamp(19px,2.8vw,27px);font-style:italic;color:rgba(246,243,236,.52);margin-bottom:34px;animation:fu .7s ease .2s both}
+.hdesc{font-size:15px;line-height:1.75;color:rgba(246,243,236,.48);max-width:500px;margin-bottom:50px;animation:fu .7s ease .3s both}
+.hbtns{display:flex;gap:16px;flex-wrap:wrap;animation:fu .7s ease .4s both}
+.bgold{background:var(--gold);color:var(--ink);padding:16px 38px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:1.2px;text-transform:uppercase;border-radius:var(--r);text-decoration:none;display:inline-block;transition:all .25s}
+.bgold:hover{background:var(--gold-hi);transform:translateY(-3px);box-shadow:0 12px 28px rgba(201,168,76,.35)}
+.bgh{background:transparent;color:var(--chalk);padding:15px 37px;border:1.5px solid rgba(246,243,236,.25);cursor:pointer;border-radius:var(--r);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;text-decoration:none;display:inline-block;transition:all .25s}
+.bgh:hover{border-color:var(--gold);color:var(--gold)}
+.hstats{position:relative;margin-top:60px;display:flex;border-top:1px solid rgba(255,255,255,.07);animation:fu .7s ease .5s both}
+.hs{flex:1;padding:28px 0;text-align:center;border-right:1px solid rgba(255,255,255,.07);position:relative}
+.hs:last-child{border-right:none}
+.hs::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .3s}
+.hs:hover::before{opacity:1}
+.hsn{font-family:'Playfair Display',serif;font-size:38px;font-weight:700;color:var(--gold);display:block;line-height:1;margin-bottom:6px}
+.hsl{font-size:10px;font-weight:600;letter-spacing:2px;text-transform:uppercase;color:rgba(246,243,236,.35)}
+@keyframes fu{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:translateY(0)}}
+/* Hero heading — consolidated from multiple override blocks */
+.hh1{font-family:'Playfair Display',serif;font-size:clamp(68px,11vw,140px);font-weight:900;line-height:0.96;color:var(--chalk);margin-bottom:28px;text-shadow:0 3px 16px rgba(0,0,0,0.25);animation:fu .7s ease .1s both}
+.shine::after{content:'';position:absolute;bottom:8px;left:0;right:0;height:5px;background:linear-gradient(90deg,transparent,var(--gold-lo),var(--gold),var(--gold-hi),var(--gold),transparent);border-radius:3px;animation:shim 2s ease-in-out infinite;box-shadow:0 2px 10px rgba(201,168,76,0.6)}
+@keyframes shim{0%,100%{opacity:0.5;transform:scaleX(0.8)}50%{opacity:1;transform:scaleX(1.1)}}
+.cdiv{height:5px;background:repeating-linear-gradient(90deg,var(--ink) 0,var(--ink) 20px,var(--gold) 20px,var(--gold) 40px)}
+.sec{padding:120px 80px;position:relative}
+.sd{background:var(--ink)}
+.sc{background:var(--cream)}
+.sh{text-align:center;margin-bottom:72px}
+.seye{display:inline-flex;align-items:center;gap:14px;font-size:10.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.seye::before,.seye::after{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+.sh2{font-family:'Playfair Display',serif;font-size:clamp(30px,5vw,54px);font-weight:700;line-height:1.12;margin-bottom:16px}
+.sh2.lt{color:var(--chalk)}
+.sp{font-size:15px;line-height:1.75;color:var(--mid);max-width:560px;margin:0 auto}
+.sp.lt{color:rgba(246,243,236,.5)}
+.awrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto}
+.aimgw{position:relative}
+.aimg{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:var(--r);display:block}
+.aideco{position:absolute;inset:0;border-radius:var(--r);background:linear-gradient(to top,rgba(8,8,8,.55) 0%,transparent 50%)}
+.aframe{position:absolute;top:20px;left:20px;right:-20px;bottom:-20px;border:2px solid rgba(201,168,76,.35);border-radius:var(--r);z-index:-1}
+.abadge{position:absolute;bottom:-22px;right:-22px;width:128px;height:128px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-lo));display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 8px 32px rgba(201,168,76,.45);border:4px solid var(--cream)}
+.abadgen{font-family:'Playfair Display',serif;font-size:34px;font-weight:900;color:var(--ink);line-height:1}
+.abadget{font-size:9px;font-weight:700;letter-spacing:1px;color:var(--ink);text-align:center;margin-top:3px}
+.aeye{font-size:10.5px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);display:flex;align-items:center;gap:12px;margin-bottom:20px}
+.aeye::before{content:'';display:block;width:28px;height:1px;background:var(--gold)}
+.ah2{font-family:'Playfair Display',serif;font-size:clamp(28px,4vw,44px);font-weight:700;line-height:1.2;margin-bottom:24px}
+.ap{font-size:14.5px;line-height:1.8;color:var(--mid);margin-bottom:14px}
+.qblock{margin:32px 0;padding:24px 28px;border-left:3px solid var(--gold);background:linear-gradient(90deg,rgba(201,168,76,.06),transparent);border-radius:0 var(--r) var(--r) 0}
+.qblock p{font-family:'Cormorant Garamond',serif;font-size:20px;font-style:italic;line-height:1.6;color:var(--ink)}
+.qblock cite{display:block;margin-top:12px;font-family:'DM Sans',sans-serif;font-size:11px;font-style:normal;font-weight:700;letter-spacing:1.5px;color:var(--gold);text-transform:uppercase}
+.pills{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.pill{background:var(--ink);color:var(--chalk);padding:9px 16px;border-radius:var(--r);font-size:11.5px;font-weight:600;display:flex;align-items:center;gap:8px}
+.pill em{color:var(--gold);font-style:normal;font-size:17px}
+.svgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;max-width:1200px;margin:0 auto;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.05)}
+.sv{padding:48px 36px;background:var(--slate);position:relative;overflow:hidden;transition:background .3s;cursor:default}
+.sv::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold-lo),var(--gold),var(--gold-hi));transform:scaleX(0);transform-origin:left;transition:transform .4s ease}
+.sv:hover{background:#262626}
+.sv:hover::before{transform:scaleX(1)}
+.svico{font-size:52px;margin-bottom:24px;display:block;transition:transform .3s}
+.sv:hover .svico{transform:scale(1.15) rotate(-5deg)}
+.svh3{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--chalk);margin-bottom:12px}
+.svp{font-size:13.5px;line-height:1.7;color:rgba(246,243,236,.5);margin-bottom:22px}
+.svl{list-style:none}
+.svl li{font-size:12.5px;color:rgba(246,243,236,.38);padding:4px 0;display:flex;align-items:center;gap:8px}
+.svl li::before{content:'—';color:var(--gold)}
+.ggrid{display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:10px;max-width:1200px;margin:0 auto}
+.gi{position:relative;overflow:hidden;border-radius:var(--r);cursor:pointer;background:var(--slate);min-height:200px}
+.gi:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gi:nth-child(5){grid-column:span 2}
+.gi img{width:100%;height:100%;object-fit:cover;display:block;min-height:200px;transition:transform .5s ease,filter .4s;filter:brightness(.82) saturate(.8)}
+.gi:hover img{transform:scale(1.06);filter:brightness(.98) saturate(1)}
+.giov{position:absolute;inset:0;background:linear-gradient(to top,rgba(8,8,8,.9) 0%,transparent 55%);display:flex;flex-direction:column;justify-content:flex-end;padding:20px;opacity:0;transition:opacity .35s}
+.gi:hover .giov{opacity:1}
+.gilab{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.gisub{font-size:13px;color:var(--chalk)}
+.gizoom{position:absolute;top:14px;right:14px;width:36px;height:36px;border-radius:50%;background:rgba(201,168,76,.85);display:flex;align-items:center;justify-content:center;font-size:16px;color:var(--ink);opacity:0;transform:scale(.7);transition:all .3s}
+.gi:hover .gizoom{opacity:1;transform:scale(1)}
+.gi-fallback{position:absolute;inset:0;display:none;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#111,#222);color:var(--gold);font-size:42px;gap:8px;text-align:center}
+.gi-fallback span{font-family:'Playfair Display',serif;font-size:12px;letter-spacing:1px;color:rgba(246,243,236,.2);padding:0 16px;line-height:1.5}
+.lb{display:none;position:fixed;inset:0;background:rgba(0,0,0,.95);z-index:9000;align-items:center;justify-content:center;padding:40px}
+.lb.open{display:flex}
+.lbi{position:relative;max-width:900px;width:100%}
+.lbi img{width:100%;border-radius:4px;max-height:80vh;object-fit:contain}
+.lbcap{font-family:'Playfair Display',serif;font-size:16px;color:var(--chalk);text-align:center;margin-top:16px;font-style:italic}
+.lbcl{position:absolute;top:-44px;right:0;width:36px;height:36px;border-radius:50%;background:var(--gold);border:none;cursor:pointer;font-size:18px;color:var(--ink);display:flex;align-items:center;justify-content:center}
+.lbpv,.lbnx{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:rgba(201,168,76,.8);border:none;cursor:pointer;font-size:20px;color:var(--ink);display:flex;align-items:center;justify-content:center;transition:background .2s}
+.lbpv{left:-56px}.lbnx{right:-56px}
+.lbpv:hover,.lbnx:hover{background:var(--gold)}
+.cwrap{max-width:900px;margin:0 auto;position:relative}
+.ctrack{display:flex;transition:transform .5s cubic-bezier(.4,0,.2,1);will-change:transform}
+.tcard{min-width:100%;padding:56px 64px;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:4px;flex-shrink:0}
+.tstars{color:var(--gold);font-size:16px;letter-spacing:3px;margin-bottom:24px}
+.tq{font-family:'Cormorant Garamond',serif;font-size:clamp(17px,2.3vw,23px);font-style:italic;line-height:1.7;color:rgba(246,243,236,.85);margin-bottom:36px;position:relative}
+.tq::before{content:'"';font-size:100px;font-style:normal;color:rgba(201,168,76,.12);position:absolute;top:-24px;left:-20px;font-family:'Playfair Display',serif;line-height:1}
+.tau{display:flex;align-items:center;gap:18px}
+.tav{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--gold),var(--gold-lo));display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--ink);flex-shrink:0;border:2px solid rgba(201,168,76,.3)}
+.taname{font-size:15px;font-weight:700;color:var(--chalk)}
+.tarole{font-size:12px;color:var(--gold);margin-top:2px}
+.cdots{display:flex;justify-content:center;gap:10px;margin-top:36px}
+.cdot{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.15);cursor:pointer;transition:all .3s;border:none;padding:0}
+.cdot.a{background:var(--gold);width:24px;border-radius:4px}
+.carrs{position:absolute;top:50%;transform:translateY(-50%);display:flex;justify-content:space-between;pointer-events:none;left:-64px;right:-64px}
+.carr{width:44px;height:44px;border-radius:50%;background:rgba(201,168,76,.15);border:1px solid rgba(201,168,76,.3);cursor:pointer;pointer-events:all;font-size:18px;color:var(--gold);display:flex;align-items:center;justify-content:center;transition:all .25s}
+.carr:hover{background:var(--gold);color:var(--ink)}
+.pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1080px;margin:0 auto}
+.pcard{border:1.5px solid var(--mist);background:#fff;border-radius:4px;padding:48px 36px;position:relative;transition:all .35s}
+.pcard:hover{border-color:var(--gold);transform:translateY(-8px);box-shadow:0 24px 60px rgba(0,0,0,.12)}
+.pcard.feat{background:var(--ink);border-color:var(--gold);transform:scale(1.04);box-shadow:0 20px 60px rgba(201,168,76,.2)}
+.pcard.feat:hover{transform:scale(1.04) translateY(-6px)}
+.ftag{position:absolute;top:-15px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--ink);padding:5px 22px;border-radius:40px;font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;white-space:nowrap}
+.ptier{font-size:10px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--gold);margin-bottom:8px}
+.pname{font-family:'Playfair Display',serif;font-size:28px;font-weight:700;margin-bottom:8px}
+.pcard.feat .pname{color:var(--chalk)}
+.pprice{display:flex;align-items:flex-end;gap:4px;margin:24px 0}
+.pcur{font-size:18px;font-weight:700;color:var(--gold);align-self:flex-start;margin-top:10px}
+.pamt{font-family:'Playfair Display',serif;font-size:54px;font-weight:700;line-height:1}
+.pcard.feat .pprice{color:var(--chalk)}
+.pper{font-size:13px;color:var(--mid);margin-bottom:8px}
+.pcard.feat .pper{color:rgba(246,243,236,.4)}
+.pdiv{height:1px;background:var(--mist);margin:24px 0}
+.pcard.feat .pdiv{background:rgba(255,255,255,.1)}
+.pfl{list-style:none;margin-bottom:36px}
+.pfl li{font-size:13.5px;padding:9px 0;color:var(--mid);border-bottom:1px solid rgba(0,0,0,.05);display:flex;gap:10px;align-items:flex-start}
+.pcard.feat .pfl li{color:rgba(246,243,236,.65);border-bottom-color:rgba(255,255,255,.05)}
+.pfl li::before{content:'♟';color:var(--gold);font-size:12px;margin-top:2px;flex-shrink:0}
+.pbtn{width:100%;padding:14px;border:none;cursor:pointer;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase;border-radius:var(--r);transition:all .25s}
+.pb-out{background:transparent;border:1.5px solid var(--ink);color:var(--ink)}
+.pb-out:hover{background:var(--ink);color:var(--chalk)}
+.pb-g{background:var(--gold);color:var(--ink)}
+.pb-g:hover{background:var(--gold-hi)}
+/* CHESS SECTION */
+#chess-section{background:var(--ink)}
+.chess-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.chess-intro .seye{margin-bottom:20px}
+.chess-intro .sh2{text-align:left;color:var(--chalk);margin-bottom:16px}
+.chess-intro .sp{text-align:left;margin:0 0 28px 0}
+.chess-modes{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px}
+.cmode-btn{padding:9px 18px;border-radius:var(--r);border:1.5px solid rgba(201,168,76,.25);background:transparent;color:rgba(246,243,236,.55);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;letter-spacing:.8px;cursor:pointer;transition:all .22s;text-transform:uppercase}
+.cmode-btn.active,.cmode-btn:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.chess-status-bar{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:var(--r);padding:14px 18px;margin-bottom:12px;display:flex;align-items:center;gap:12px}
+.status-dot{width:8px;height:8px;border-radius:50%;background:var(--gold);flex-shrink:0;animation:pdot 2s ease infinite}
+@keyframes pdot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.4;transform:scale(.7)}}
+.status-txt{font-size:13px;color:rgba(246,243,236,.75);font-family:'DM Sans',sans-serif;flex:1}
+.chess-controls{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.cc-btn{padding:9px 14px;border-radius:var(--r);border:1.5px solid rgba(255,255,255,.1);background:rgba(255,255,255,.04);color:rgba(246,243,236,.6);font-family:'DM Sans',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .22s}
+.cc-btn:hover{border-color:var(--gold);color:var(--gold)}
+.cc-btn.danger{border-color:rgba(220,80,80,.3);color:rgba(220,100,100,.7)}
+.cc-btn.danger:hover{border-color:rgba(220,80,80,.6);color:rgba(220,80,80,.9)}
+.ai-thinking{display:none;align-items:center;gap:10px;padding:10px 16px;background:rgba(201,168,76,.08);border:1px solid rgba(201,168,76,.2);border-radius:var(--r);margin-top:10px}
+.ai-thinking.show{display:flex}
+.ai-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:aidot 1.2s ease infinite}
+.ai-dot:nth-child(2){animation-delay:.2s}
+.ai-dot:nth-child(3){animation-delay:.4s}
+@keyframes aidot{0%,80%,100%{transform:scale(0);opacity:.3}40%{transform:scale(1);opacity:1}}
+.ai-think-txt{font-size:12px;color:var(--gold);font-family:'DM Sans',sans-serif;font-weight:600}
+.captured-label{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(246,243,236,.3);margin-bottom:4px;font-family:'DM Sans',sans-serif}
+.captured-row{font-size:18px;min-height:28px;flex-wrap:wrap;line-height:1.4}
+.move-history{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:var(--r);padding:14px 18px;max-height:130px;overflow-y:auto;margin-top:12px}
+.move-history::-webkit-scrollbar{width:4px}
+.move-history::-webkit-scrollbar-thumb{background:rgba(201,168,76,.3);border-radius:2px}
+.mh-title{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:rgba(201,168,76,.5);margin-bottom:8px;font-family:'DM Sans',sans-serif}
+.mh-grid{display:grid;grid-template-columns:24px 1fr 1fr;gap:3px 10px}
+.mh-num{font-size:11px;color:rgba(246,243,236,.2);font-family:'DM Sans',sans-serif}
+.mh-move{font-size:11.5px;color:rgba(246,243,236,.6);font-family:'DM Sans',sans-serif;font-weight:500}
+.mh-move.latest{color:var(--gold)}
+.board-outer{background:var(--ink);border-radius:4px;padding:14px;border:1px solid rgba(201,168,76,.15);box-shadow:0 24px 64px rgba(0,0,0,.6)}
+.board-files{display:grid;grid-template-columns:20px repeat(8,1fr);margin-bottom:2px}
+.board-files-bot{display:grid;grid-template-columns:20px repeat(8,1fr);margin-top:2px}
+.board-row{display:grid;grid-template-columns:20px repeat(8,1fr)}
+.blabel{text-align:center;font-size:10px;font-weight:700;color:rgba(201,168,76,.35);font-family:'DM Sans',sans-serif}
+.rlabel{display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;color:rgba(201,168,76,.35);font-family:'DM Sans',sans-serif}
+.chessboard{display:grid;grid-template-columns:repeat(8,1fr);grid-template-rows:repeat(8,1fr);width:100%;aspect-ratio:1;border:2px solid rgba(201,168,76,.2);border-radius:2px;overflow:hidden}
+.square{position:relative;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:clamp(24px,3.5vw,42px);transition:filter .15s}
+.square.light{background:var(--board-light)}
+.square.dark{background:var(--board-dark)}
+.square.selected{outline:3px solid rgba(201,168,76,.9);outline-offset:-3px;z-index:2}
+.square.possible-move::after{content:'';position:absolute;width:30%;height:30%;border-radius:50%;background:rgba(0,0,0,.2);pointer-events:none;z-index:2}
+.square.possible-capture{outline:3px solid rgba(200,50,50,.6);outline-offset:-3px;z-index:2}
+.square.last-from{background:rgba(201,168,76,.3)!important}
+.square.last-to{background:rgba(201,168,76,.45)!important}
+.square.in-check{background:rgba(210,40,40,.6)!important}
+.piece{user-select:none;line-height:1;cursor:pointer;display:flex;align-items:center;justify-content:center;width:100%;height:100%}
+.promo-modal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:9500;align-items:center;justify-content:center}
+.promo-modal.open{display:flex}
+.promo-box{background:var(--slate);border:1px solid rgba(201,168,76,.4);border-radius:4px;padding:36px;text-align:center;max-width:360px;width:90%}
+.promo-box h3{font-family:'Playfair Display',serif;font-size:24px;color:var(--chalk);margin-bottom:8px}
+.promo-box p{font-size:13px;color:rgba(246,243,236,.45);margin-bottom:24px}
+.promo-pieces{display:flex;gap:12px;justify-content:center}
+.promo-piece{width:64px;height:64px;background:rgba(255,255,255,.05);border:2px solid rgba(201,168,76,.25);border-radius:var(--r);display:flex;align-items:center;justify-content:center;font-size:38px;cursor:pointer;transition:all .2s}
+.promo-piece:hover{background:rgba(201,168,76,.15);border-color:var(--gold);transform:scale(1.1)}
+.chess-tip{margin-top:24px;padding:16px 20px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:var(--r)}
+.chess-tip p{font-size:13px;line-height:1.7;color:rgba(246,243,236,.5)}
+.chess-tip strong{color:var(--gold)}
+.chess-tip a{color:var(--gold);text-decoration:underline}
+/* FORMS */
+.fbox{max-width:800px;margin:0 auto;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);padding:60px;border-radius:4px}
+.fg2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.ff{grid-column:span 2}
+.fg{display:flex;flex-direction:column;gap:7px}
+.fl{font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(246,243,236,.45)}
+.fi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:var(--chalk);padding:13px 17px;border-radius:var(--r);font-family:'DM Sans',sans-serif;font-size:14px;outline:none;transition:border-color .2s;width:100%}
+.fi:focus{border-color:var(--gold)}
+.fi option{background:var(--slate)}
+.fi-lt{background:rgba(0,0,0,.04)!important;border-color:var(--mist)!important;color:var(--ink)!important}
+.swrap{max-width:1000px;margin:0 auto}
+.sdays{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-bottom:6px}
+.sday{text-align:center;font-size:10.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--mid);padding:10px 0}
+.sslots{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.slot{padding:12px 6px;border-radius:var(--r);text-align:center;cursor:pointer;transition:all .22s;font-size:10.5px;font-weight:600;border:1.5px solid transparent;min-height:76px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px}
+.slot.av{background:rgba(201,168,76,.07);border-color:rgba(201,168,76,.2);color:var(--mid)}
+.slot.av:hover{background:var(--gold);border-color:var(--gold);color:var(--ink);transform:translateY(-3px);box-shadow:0 8px 20px rgba(201,168,76,.3)}
+.slot.bk{background:rgba(0,0,0,.04);border-color:var(--mist);color:var(--mist);cursor:not-allowed}
+.slot.sl{background:var(--ink);border-color:var(--ink);color:var(--gold)}
+.slott{font-size:12px;font-weight:700}
+.slotb{font-size:10px;opacity:.6}
+.sleg{display:flex;gap:24px;margin-top:20px;justify-content:center}
+.slegi{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--mid)}
+.sld{width:14px;height:14px;border-radius:2px}
+.bkmodal{display:none;position:fixed;inset:0;background:rgba(0,0,0,.8);z-index:8000;align-items:center;justify-content:center}
+.bkmodal.open{display:flex}
+.bkmbox{background:var(--slate);border:1px solid rgba(201,168,76,.4);padding:48px;border-radius:4px;max-width:440px;width:90%;text-align:center}
+.bkmbox h3{font-family:'Playfair Display',serif;font-size:28px;color:var(--chalk);margin-bottom:12px}
+.bkmbox p{font-size:14px;color:rgba(246,243,236,.6);line-height:1.6;margin-bottom:24px}
+.sconf{font-family:'Playfair Display',serif;font-size:20px;color:var(--gold);font-style:italic;margin-bottom:32px}
+.bgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:20px;max-width:1200px;margin:0 auto}
+.bc{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:4px;overflow:hidden;transition:border-color .3s,transform .3s;cursor:pointer}
+.bc:hover{border-color:rgba(201,168,76,.35);transform:translateY(-4px)}
+.bcimg{height:210px;overflow:hidden}
+.bc:first-child .bcimg{height:260px}
+.bcimg img{width:100%;height:100%;object-fit:cover;transition:transform .5s;filter:brightness(.72) saturate(.7)}
+.bc:hover .bcimg img{transform:scale(1.07);filter:brightness(.9) saturate(.9)}
+.bcbody{padding:28px}
+.bcat{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.btit{font-family:'Playfair Display',serif;font-size:19px;font-weight:700;color:var(--chalk);line-height:1.35;margin-bottom:10px}
+.bc:first-child .btit{font-size:24px}
+.bexc{font-size:13px;line-height:1.65;color:rgba(246,243,236,.4);margin-bottom:18px}
+.bmeta{font-size:11px;color:rgba(246,243,236,.28);display:flex;gap:14px;flex-wrap:wrap}
+.cowrap{display:grid;grid-template-columns:1fr 1.4fr;gap:80px;max-width:1200px;margin:0 auto}
+.coit{display:flex;gap:18px;margin-bottom:32px;align-items:flex-start}
+.coico{width:48px;height:48px;background:var(--ink);border-radius:var(--r);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:20px;border:1px solid rgba(201,168,76,.2)}
+.colab{font-size:10px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.coval{font-size:14px;line-height:1.65;color:var(--mid)}
+.mapbox{height:230px;border-radius:var(--r);overflow:hidden;margin-top:20px;background:linear-gradient(135deg,#1a1a1a 0%,#2a2a2a 100%);display:flex;align-items:center;justify-content:center;border:1px solid rgba(201,168,76,.15)}
+footer{background:var(--ink);padding:80px 80px 36px}
+.ftgrid{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:48px;padding-bottom:56px;border-bottom:1px solid rgba(255,255,255,.07);margin-bottom:36px}
+.flogo{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gold);margin-bottom:4px}
+.flogo em{color:var(--chalk);font-style:normal;font-weight:400}
+.ftagl{font-family:'Cormorant Garamond',serif;font-size:14px;font-style:italic;color:rgba(246,243,236,.35);margin-bottom:20px}
+.fdesc{font-size:13px;line-height:1.7;color:rgba(246,243,236,.3);max-width:280px}
+.fsocs{display:flex;gap:10px;margin-top:24px}
+.fsoc{width:36px;height:36px;border-radius:var(--r);background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);display:flex;align-items:center;justify-content:center;font-size:13px;color:rgba(246,243,236,.4);cursor:pointer;transition:all .2s;text-decoration:none}
+.fsoc:hover{background:var(--gold);border-color:var(--gold);color:var(--ink)}
+.fctit{font-size:10.5px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--chalk);margin-bottom:18px}
+.flnks{list-style:none}
+.flnks li{padding:5px 0}
+.flnks a{font-size:13px;color:rgba(246,243,236,.3);text-decoration:none;transition:color .2s}
+.flnks a:hover{color:var(--gold)}
+.fbot{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.fcopy{font-size:11.5px;color:rgba(246,243,236,.2)}
+.fpc{font-size:18px;letter-spacing:10px;color:rgba(255,255,255,.08)}
+.rv{opacity:0;transform:translateY(32px);transition:opacity .65s ease,transform .65s ease}
+.rv.in{opacity:1;transform:translateY(0)}
+@media(max-width:1100px){.chess-wrap{grid-template-columns:1fr}}
+@media(max-width:1024px){.svgrid{grid-template-columns:repeat(2,1fr)}.bgrid{grid-template-columns:1fr 1fr}.bc:first-child{grid-column:span 2}.ftgrid{grid-template-columns:1fr 1fr;gap:32px}}
+@media(max-width:768px){nav{padding:0 20px}.nlinks{display:none}.hbg{display:flex}.sec{padding:80px 20px}.hcont{padding:0 20px}.awrap,.cowrap{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}.pcard.feat{transform:none}.fg2{grid-template-columns:1fr}.ff{grid-column:span 1}.svgrid{grid-template-columns:1fr}.ggrid{grid-template-columns:repeat(2,1fr)}.gi:nth-child(1){grid-column:span 2}.gi:nth-child(5){grid-column:span 1}.bgrid{grid-template-columns:1fr}.bc:first-child{grid-column:span 1}.ftgrid{grid-template-columns:1fr}.fbot{flex-direction:column;text-align:center}.hstats{flex-direction:column}.hs{border-right:none;border-bottom:1px solid rgba(255,255,255,.07)}.carrs{left:-28px;right:-28px}.carr{width:34px;height:34px;font-size:14px}.tcard{padding:38px 26px}.abadge{right:-8px;bottom:-14px}.fbox{padding:28px}.lbpv{left:-20px}.lbnx{right:-20px}.chess-wrap{grid-template-columns:1fr}.trust-badges{flex-direction:column;align-items:center}.tz-grid{grid-template-columns:1fr 1fr}.coach-creds{grid-template-columns:1fr}.global-strip{flex-direction:column;gap:12px}{font-size:11px}}
+
+/* ===== ACCESSIBILITY: FOCUS STYLES ===== */
+*:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* ===== CTA ENHANCEMENTS ===== */
+.cta-trial-bar{background:linear-gradient(135deg,rgba(201,168,76,.12) 0%,rgba(201,168,76,.05) 100%);border:1px solid rgba(201,168,76,.3);border-radius:6px;padding:24px 32px;margin-bottom:32px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.cta-trial-bar h3{font-family:'Playfair Display',serif;font-size:20px;color:var(--chalk);margin-bottom:6px}
+.cta-trial-bar p{font-size:13px;color:rgba(246,243,236,.55);margin:0}
+.cta-trial-btn{background:var(--gold);color:var(--ink);padding:14px 28px;border-radius:var(--r);font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:.8px;text-transform:uppercase;text-decoration:none;white-space:nowrap;transition:all .25s;border:none;cursor:pointer}
+.cta-trial-btn:hover{background:var(--gold-hi);transform:translateY(-2px);box-shadow:0 8px 24px rgba(201,168,76,.4)}
+.benefit-pills{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;margin-bottom:32px}
+.bpill{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:40px;padding:7px 16px;font-size:12px;color:rgba(246,243,236,.75);font-weight:500}
+.bpill-ico{font-size:14px}
+
+/* ===== TRUST SECTION ===== */
+.trust-badges{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:48px;justify-content:center}
+.tbadge{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.1);border-radius:6px;padding:14px 20px;transition:border-color .2s}
+.tbadge:hover{border-color:rgba(201,168,76,.35)}
+.tbadge-ico{font-size:24px}
+.tbadge-txt strong{display:block;font-size:13px;font-weight:700;color:var(--chalk);margin-bottom:2px}
+.tbadge-txt span{font-size:11px;color:rgba(246,243,236,.4)}
+
+/* ===== COACH CREDENTIALS ===== */
+.coach-creds{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:36px}
+.cred-item{background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:4px;padding:20px 22px;transition:border-color .25s}
+.cred-item:hover{border-color:rgba(201,168,76,.3)}
+.cred-item .cred-ico{font-size:28px;margin-bottom:10px;display:block}
+.cred-item strong{display:block;font-size:14px;font-weight:700;color:var(--chalk);margin-bottom:4px}
+.cred-item span{font-size:12px;color:rgba(246,243,236,.4);line-height:1.5}
+
+/* ===== RATINGS ROW ===== */
+.ratings-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap;margin-top:32px;padding:20px 28px;background:rgba(201,168,76,.06);border:1px solid rgba(201,168,76,.15);border-radius:6px}
+.rating-item{text-align:center}
+.rating-item .rnum{font-family:'Playfair Display',serif;font-size:30px;font-weight:700;color:var(--gold);display:block;line-height:1}
+.rating-item .rlbl{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(246,243,236,.35);margin-top:4px}
+.rating-stars{color:var(--gold);font-size:18px;letter-spacing:2px}
+.rating-plat{font-size:11px;color:rgba(246,243,236,.35);margin-top:2px}
+
+/* ===== GLOBAL AUDIENCE / TIMEZONE STRIP ===== */
+.global-strip{background:var(--slate);border:1px solid rgba(255,255,255,.07);border-radius:6px;padding:20px 28px;display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.global-strip .gs-label{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--gold);white-space:nowrap}
+.tz-list{display:flex;gap:16px;flex-wrap:wrap;flex:1}
+.tz-item{font-size:12px;color:rgba(246,243,236,.6);display:flex;align-items:center;gap:6px}
+.tz-dot{width:6px;height:6px;border-radius:50%;background:var(--gold);flex-shrink:0}
+.online-badge{display:inline-flex;align-items:center;gap:7px;background:rgba(50,200,100,.08);border:1px solid rgba(50,200,100,.2);border-radius:40px;padding:5px 14px;font-size:11px;font-weight:700;color:rgba(80,220,120,.8);letter-spacing:.5px}
+.online-dot{width:6px;height:6px;border-radius:50%;background:#50dc78;animation:pdot 2s ease infinite}
+
+/* ===== PRICING:  toggle ===== */
+.price-toggle{display:flex;align-items:center;gap:12px;justify-content:center;margin-bottom:36px}
+.price-toggle span{font-size:13px;color:var(--mid)}
+.price-toggle span.active{color:var(--gold);font-weight:700}
+-switch{width:44px;height:24px;border-radius:12px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.15);cursor:pointer;position:relative;transition:background .2s}
+-switch.on{background:rgba(201,168,76,.3);border-color:rgba(201,168,76,.4)}
+-knob{position:absolute;top:3px;left:3px;width:16px;height:16px;border-radius:50%;background:var(--gold);transition:left .2s}
+-switch.on -knob{left:23px}
+{font-size:12px;color:var(--gold);display:none;font-weight:600;margin-left:4px}
+.show{display:inline}
+
+/* ===== FORM VALIDATION ===== */
+.fg .field-error{font-size:11px;color:#e05555;margin-top:4px;display:none}
+.fg.invalid .field-error{display:block}
+.fg.invalid .fi{border-color:#e05555!important}
+.fg.valid .fi{border-color:rgba(80,200,100,.5)!important}
+.form-msg{padding:18px 24px;border-radius:4px;margin-top:24px;font-size:14px;font-weight:600;display:none;text-align:center}
+.form-msg.success{background:rgba(50,200,100,.08);border:1px solid rgba(50,200,100,.25);color:#50dc78;display:block}
+.form-msg.error{background:rgba(220,80,80,.08);border:1px solid rgba(220,80,80,.25);color:#e05555;display:block}
+.submit-loading{display:none;align-items:center;gap:8px;justify-content:center;margin-top:16px}
+.submit-loading.show{display:flex}
+
+/* ===== GALLERY IMPROVEMENTS ===== */
+.gi{position:relative;overflow:hidden;border-radius:var(--r);cursor:pointer;background:var(--slate);min-height:200px}
+.gi img{width:100%;height:100%;object-fit:cover;display:block;min-height:200px;transition:transform .5s ease,filter .4s;filter:brightness(.82) saturate(.8);will-change:transform}
+.gi:focus{outline:2px solid var(--gold);outline-offset:2px}
+.lb-loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:32px;color:var(--gold);opacity:0;transition:opacity .2s}
+.lb.loading .lb-loading{opacity:1}
+.lb.loading #lbimg{opacity:0}
+#lbimg{transition:opacity .3s}
+
+/* ===== PERFORMANCE: reduce animation for prefers-reduced-motion ===== */
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.hbg-img{animation:none}.nking{animation:none}.pfloat{animation:none}.tkt{animation:none}}
+
+/* ===== TESTIMONIAL ENHANCEMENTS ===== */
+.tcard{position:relative}
+.t-platform{font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(201,168,76,.5);margin-top:6px}
+.tav img{width:100%;height:100%;border-radius:50%;object-fit:cover}
+.tav-wrap{width:52px;height:52px;border-radius:50%;overflow:hidden;flex-shrink:0;border:2px solid rgba(201,168,76,.3)}
+
+/* ===== STICKY FREE TRIAL FLOATING CTA ===== */
+.floating-cta{position:fixed;bottom:28px;right:28px;z-index:990;background:var(--gold);color:var(--ink);padding:14px 24px;border-radius:40px;font-family:'DM Sans',sans-serif;font-size:13px;font-weight:700;letter-spacing:.5px;text-decoration:none;box-shadow:0 8px 32px rgba(201,168,76,.5);transition:all .3s;display:flex;align-items:center;gap:8px;opacity:0;transform:translateY(20px);pointer-events:none}
+.floating-cta.show{opacity:1;transform:translateY(0);pointer-events:all}
+.floating-cta:hover{background:var(--gold-hi);transform:translateY(-3px);box-shadow:0 12px 40px rgba(201,168,76,.6)}
+@media(max-width:480px){.floating-cta{bottom:16px;right:16px;padding:12px 18px;font-size:12px}}
+</style>
+
+<style>
+/* Complete pricing blackout */
+.pamt, .pprice, .ppriced, .pcur, .ptier, .price-toggle, .ptoggle-switch, .price-usd,
+.pfl li:nth-of-type(2), .pfl li:nth-of-type(3), /* price feature rows */
+[class*="price"], [class*="amt"] { display: none !important; }
+
+/* Remove price gaps */
+.pcard .pdiv { margin: 12px 0 !important; }
+.pcard .pfl { margin-top: 24px !important; }
+</style>
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  (function() {
+    emailjs.init({ publicKey: "kwFNmSY4lN9R0LvkP" });
+  })();
+</script>
+</head>
+<body>
+<div id="pb"></div>
+
+<!-- FLOATING CTA -->
+<a href="#register" class="floating-cta" id="floatingCTA" aria-label="Book your free trial class">
+  ♟ Book Free Trial
+</a>
+
+<div class="tkw"><div class="tkt">
+  <div class="tki">♛ Arjun Mehta wins State U-18 Championship 2025<span class="tks">◆</span></div>
+  <div class="tki">♟ Priya Sharma achieves FIDE rating 1650<span class="tks">◆</span></div>
+  <div class="tki">♞ Ankit kumar gupta — Top 5 Coaching Institute, Karnataka<span class="tks">◆</span></div>
+  <div class="tki">♜ 40+ National &amp; International tournament victories<span class="tks">◆</span></div>
+  <div class="tki">♗ New Weekend Online Batch starting June 2026<span class="tks">◆</span></div>
+  <div class="tki">♔ Ankit Kumar Gupta featured in Chess India Magazine<span class="tks">◆</span></div>
+  <div class="tki">♛ Arjun Mehta wins State U-18 Championship 2025<span class="tks">◆</span></div>
+  <div class="tki">♟ Priya Sharma achieves FIDE rating 1650<span class="tks">◆</span></div>
+  <div class="tki">♞ Ankit Kumar Gupta — Top 5 Coaching Institute, Karnataka<span class="tks">◆</span></div>
+  <div class="tki">♜ 40+ National &amp; International tournament victories<span class="tks">◆</span></div>
+  <div class="tki">♗ New Weekend Online Batch starting June 2026<span class="tks">◆</span></div>
+  <div class="tki">♔ Ankit Kumar Gupta featured in Chess India Magazine<span class="tks">◆</span></div>
+</div></div>
+
+<nav id="mainnav">
+  <a href="#hero" class="nbrand"><span class="nking">♔</span><span class="nname">Ankit kumar gupta</span></a>
+  <ul class="nlinks">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Programs</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#chess-section">Play Chess</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#schedule">Schedule</a></li>
+    <li><a href="#blog">Blog</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#register" class="ncta">Register Free</a></li>
+  </ul>
+  <div class="hbg" id="hbg"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobnav" id="mobnav">
+  <a href="#about" onclick="closeMob()">About</a>
+  <a href="#services" onclick="closeMob()">Programs</a>
+  <a href="#gallery" onclick="closeMob()">Gallery</a>
+  <a href="#chess-section" onclick="closeMob()">Play Chess</a>
+  <a href="#pricing" onclick="closeMob()">Pricing</a>
+  <a href="#schedule" onclick="closeMob()">Schedule</a>
+  <a href="#blog" onclick="closeMob()">Blog</a>
+  <a href="#contact" onclick="closeMob()">Contact</a>
+  <a href="#register" onclick="closeMob()" style="color:var(--gold)">♟ Register Free</a>
+</div>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hbg-img"></div>
+  <div class="hgrid"></div>
+  <div class="hvig"></div>
+  <div class="pfloat" style="top:15%;right:12%;--d:7s">♛</div>
+  <div class="pfloat" style="top:54%;right:22%;--d:9s;font-size:50px;animation-delay:-3s">♞</div>
+  <div class="pfloat" style="top:68%;right:8%;--d:6s;font-size:40px;animation-delay:-1.5s">♜</div>
+  <div class="pfloat" style="top:24%;right:38%;--d:11s;font-size:35px;animation-delay:-4s">♟</div>
+  <div class="hcont">
+    <div class="hpill">♔ &nbsp;India's Premier Chess Coaching Institute</div>
+    <h1 class="hh1">Master the<br><span class="shine">Game of Kings</span></h1>
+    <p class="htagl">"Where Strategy Meets Excellence"</p>
+    <p class="hdesc">From first moves to FIDE ratings — Ankit kumar gupta delivers world-class coaching for beginners, intermediates, and competitive players of every age.</p>
+    <div class="hbtns">
+      <a href="#register" class="bgold" aria-label="Book a free trial class">♟ &nbsp;Book Free Trial Class</a>
+      <a href="#chess-section" class="bgh" aria-label="Play chess online right now">▶ Play Chess Now</a>
+    </div>
+    <div class="benefit-pills" style="margin-top:20px;margin-bottom:0">
+      <div class="bpill"><span class="bpill-ico">🌐</span> Online via Zoom & Meet</div>
+      <div class="bpill"><span class="bpill-ico">🌍</span> International Students Welcome</div>
+      <div class="bpill"><span class="bpill-ico">⏰</span> Flexible Timings</div>
+      <div class="bpill"><span class="bpill-ico">🎓</span> First Class Free</div>
+    </div>
+  </div>
+  <div class="hstats">
+    <div class="hs"><span class="hsn" data-t="50">0</span><span class="hsl">Students Trained</span></div>
+    <div class="hs"><span class="hsn" data-t="10">0</span><span class="hsl">Years Excellence</span></div>
+    <div class="hs"><span class="hsn" data-t="40">0</span><span class="hsl">Tournaments Won</span></div>
+    <div class="hs"><span class="hsn" data-t="98" data-s="%">0</span><span class="hsl">Student Satisfaction</span></div>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- ABOUT -->
+<section id="about" class="sec sc">
+  <div class="awrap">
+    <div class="aimgw rv">
+      <img class="aimg" src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=700&q=80" alt="Chess coaching" loading="lazy">
+      <div class="aideco"></div>
+      <div class="aframe"></div>
+      <div class="abadge"><span class="abadgen">15+</span><span class="abadget">Years of<br>Excellence</span></div>
+    </div>
+    <div class="rv" style="transition-delay:.15s">
+      <div class="aeye">Our Story</div>
+      <h2 class="ah2">Shaping Champions,<br>One Move at a Time</h2>
+      <p class="ap">Founded in 2009 by <strong>Ankit Kumar Gupta</strong> — a FIDE-certified chess coach — Ankit Kumar Gupta Chess Academy was born from a single conviction: every mind, at any age, can be trained to think sharper, deeper, and further through chess.</p>
+      <p class="ap">Having competed in 120+ national and international tournaments and representing India at Asian Chess Championships, Ankit channelled decades of competitive experience into a coaching methodology blending classical theory with modern engine-assisted analysis.</p>
+      <div class="qblock">
+        <p>"Chess is not merely a game — it is a mirror to the mind. We don't just teach moves; we build thinkers, problem-solvers, and champions."</p>
+        <cite>— Ankit Kumar Gupta, Founder &amp; Head Coach</cite>
+      </div>
+      <div class="pills">
+        <div class="pill"><em>♛</em> FIDE Certified Coach</div>
+        <div class="pill"><em>♞</em> Tournament Specialist</div>
+        <div class="pill"><em>♟</em> 50+ Students Mentored</div>
+        <div class="pill"><em>♜</em> 40+ Titles Won</div>
+      </div>
+      <!-- COACH CREDENTIALS -->
+      <div class="coach-creds" style="margin-top:32px">
+        <div class="cred-item" role="listitem">
+          <span class="cred-ico">🏆</span>
+          <strong>FIDE-Certified Coach</strong>
+          <span>Internationally recognized coaching qualification by FIDE (World Chess Federation)</span>
+        </div>
+        <div class="cred-item" role="listitem">
+          <span class="cred-ico">🎖️</span>
+          <strong>National Level Champion</strong>
+          <span>Competed in 120+ national & international tournaments; represented India at Asian Chess Championship</span>
+        </div>
+        <div class="cred-item" role="listitem">
+          <span class="cred-ico">📰</span>
+          <strong>Featured in Media</strong>
+          <span>Chess India Magazine, Times of India Karnataka Edition; Top 5 Coaching Institute in Karnataka (2024)</span>
+        </div>
+      </div>
+      <!-- RATINGS -->
+      <div class="ratings-row" role="region" aria-label="Student ratings and reviews">
+        <div class="rating-item">
+          <span class="rnum">4.9</span>
+          <div class="rating-stars" aria-label="4.9 out of 5 stars">★★★★★</div>
+          <div class="rating-plat">Google Reviews</div>
+        </div>
+        <div style="width:1px;height:50px;background:rgba(255,255,255,.08)"></div>
+        <div class="rating-item">
+          <span class="rnum">50+</span>
+          <div class="rlbl">Happy Students</div>
+        </div>
+        <div style="width:1px;height:50px;background:rgba(255,255,255,.08)"></div>
+        <div class="rating-item">
+          <span class="rnum">98%</span>
+          <div class="rlbl">Would Recommend</div>
+        </div>
+        <div style="width:1px;height:50px;background:rgba(255,255,255,.08)"></div>
+        <div class="rating-item">
+          <span class="rnum">15+</span>
+          <div class="rlbl">Years Teaching</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- SERVICES -->
+<section id="services" class="sec sd">
+  <div class="sh rv"><div class="seye">Programs &amp; Offerings</div><h2 class="sh2 lt">Our Training Programs</h2><p class="sp lt">Structured learning paths designed for every skill level — from the very first move to grandmaster ambitions.</p></div>
+  <div class="svgrid rv" style="transition-delay:.1s">
+    <div class="sv"><span class="svico">♙</span><h3 class="svh3">Beginner Batches</h3><p class="svp">For children (age 5+) and first-time adult learners. Build a strong foundation with piece movements, tactics, and game fundamentals in a nurturing environment.</p><ul class="svl"><li>Rules &amp; piece movements</li><li>Basic opening principles</li><li>Tactical patterns &amp; puzzles</li><li>Endgame fundamentals</li></ul></div>
+    <div class="sv"><span class="svico">♗</span><h3 class="svh3">Advanced Training</h3><p class="svp">For rated or experienced players seeking serious improvement. Deep dive into positional play, custom opening repertoires, and complex tactical patterns.</p><ul class="svl"><li>Personalized game analysis</li><li>Opening repertoire building</li><li>Advanced endgame mastery</li><li>Engine-assisted study sessions</li></ul></div>
+    <div class="sv"><span class="svico">♛</span><h3 class="svh3">Tournament Prep</h3><p class="svp">Intensive preparation for state, national &amp; FIDE-rated tournaments. Simulated match conditions, psychological coaching, and time management training.</p><ul class="svl"><li>Simulated match play</li><li>Psychological preparation</li><li>Clock management drills</li><li>Opponent research &amp; prep</li></ul></div>
+    <div class="sv"><span class="svico">♞</span><h3 class="svh3">Online Classes</h3><p class="svp">Learn from anywhere in India. Live interactive sessions on Zoom with shared Lichess Study boards, matching the depth of our in-person classes.</p><ul class="svl"><li>Live interactive sessions</li><li>Shared Lichess analysis boards</li><li>Recorded class archive</li><li>Structured homework system</li></ul></div>
+    <div class="sv"><span class="svico">♜</span><h3 class="svh3">One-on-One Coaching</h3><p class="svp">Hyper-personalized 1:1 sessions directly with Ankit Kumar Gupta or senior coaches. Rapid improvement, laser-focused on your specific weaknesses and goals.</p><ul class="svl"><li>Custom study plan &amp; roadmap</li><li>Detailed weakness identification</li><li>Unlimited Q&amp;A &amp; support</li><li>Monthly milestone reports</li></ul></div>
+    <div class="sv"><span class="svico">♟</span><h3 class="svh3">School Programs</h3><p class="svp">Curriculum-integrated chess programs for schools. We partner with institutions to make chess a structured co-curricular subject with measurable outcomes.</p><ul class="svl"><li>Curriculum-aligned lessons</li><li>Inter-school tournaments</li><li>Teacher training workshops</li><li>Digital progress tracking</li></ul></div>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- GALLERY -->
+<section id="gallery" class="sec sc">
+  <div class="sh rv"><div class="seye">Gallery</div><h2 class="sh2">Moments &amp; Milestones</h2><p class="sp">Real photographs from our tournaments, award ceremonies, classroom sessions, and student achievements.</p></div>
+  <div class="ggrid rv" style="transition-delay:.1s">
+    <div class="gi" onclick="openLB(0)">
+      <img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=800&q=80" alt="State Championship Finals 2024" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♛<span>State Championship Finals 2024</span></div>
+      <div class="giov"><div class="gilab">♛ Tournament</div><div class="gisub">State Championship Finals — 2024</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(1)">
+      <img src="https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=500&q=80" alt="Beginner Batch Workshop" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♙<span>Beginner Batch Workshop</span></div>
+      <div class="giov"><div class="gilab">♙ Classroom</div><div class="gisub">Beginner Batch Workshop</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(2)">
+      <img src="https://images.unsplash.com/photo-1549451371-64aa98a6f660?w=500&q=80" alt="Award Ceremony 2024" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♔<span>Annual Award Ceremony 2024</span></div>
+      <div class="giov"><div class="gilab">♔ Awards</div><div class="gisub">Annual Award Ceremony 2024</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(3)">
+      <img src="https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=500&q=80" alt="One on One Coaching" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♞<span>1-on-1 Coaching Session</span></div>
+      <div class="giov"><div class="gilab">♞ Coaching</div><div class="gisub">1-on-1 Coaching Session</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(4)">
+      <img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800&q=80" alt="School Chess Tournament 2023" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♗<span>School Chess Tournament 2023</span></div>
+      <div class="giov"><div class="gilab">♗ School</div><div class="gisub">School Chess Tournament 2023</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(5)">
+      <img src="https://images.unsplash.com/photo-1547995886-6dc09384c6e6?w=500&q=80" alt="GM Simultaneous Exhibition" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♜<span>GM Simultaneous Exhibition</span></div>
+      <div class="giov"><div class="gilab">♜ Exhibition</div><div class="gisub">GM Simultaneous Exhibition</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+    <div class="gi" onclick="openLB(6)">
+      <img src="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=500&q=80" alt="Group Training Session" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+      <div class="gi-fallback">♝<span>Group Training Session</span></div>
+      <div class="giov"><div class="gilab">♝ Training</div><div class="gisub">Group Training Session</div></div>
+      <div class="gizoom">⤢</div>
+    </div>
+  </div>
+</section>
+<div class="lb" id="lb" onclick="lbOut(event)">
+  <div class="lbi">
+    <button class="lbcl" onclick="closeLB()">✕</button>
+    <button class="lbpv" onclick="lbNav(-1)">‹</button>
+    <button class="lbnx" onclick="lbNav(1)">›</button>
+    <img id="lbimg" src="" alt="">
+    <div class="lbcap" id="lbcap"></div>
+  </div>
+</div>
+<div class="cdiv"></div>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="sec sd" aria-labelledby="testimonials-heading">
+  <div class="sh rv">
+    <div class="seye">Student Stories</div>
+    <h2 class="sh2 lt" id="testimonials-heading">Voices from Our Students</h2>
+    <p class="sp lt">From beginners and school kids to competitive players — hear what our community says.</p>
+  </div>
+  <!-- TRUST BADGES -->
+  <div class="trust-badges rv" style="transition-delay:.05s" role="list" aria-label="Trust indicators">
+    <div class="tbadge" role="listitem">
+      <span class="tbadge-ico">⭐</span>
+      <div class="tbadge-txt"><strong>4.9 / 5.0</strong><span>193 Google Reviews</span></div>
+    </div>
+    <div class="tbadge" role="listitem">
+      <span class="tbadge-ico">🏅</span>
+      <div class="tbadge-txt"><strong>FIDE Affiliated</strong><span>World Chess Federation</span></div>
+    </div>
+    <div class="tbadge" role="listitem">
+      <span class="tbadge-ico">🌍</span>
+      <div class="tbadge-txt"><strong>International Students</strong><span>UAE, UK, USA, Singapore & more</span></div>
+    </div>
+    <div class="tbadge" role="listitem">
+      <span class="tbadge-ico">🎓</span>
+      <div class="tbadge-txt"><strong>First Class Free</strong><span>No commitment required</span></div>
+    </div>
+    <div class="tbadge" role="listitem">
+      <span class="tbadge-ico">💻</span>
+      <div class="tbadge-txt"><strong>Online via Zoom</strong><span>Live interactive sessions</span></div>
+    </div>
+  </div>
+  <div class="cwrap rv" style="transition-delay:.1s" role="region" aria-label="Student testimonials carousel">
+    <div style="overflow:hidden;border-radius:4px">
+      <div class="ctrack" id="ctr" aria-live="polite">
+        <div class="tcard" role="article" aria-label="Testimonial from Arjun Mehta"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">Joining Ankit kumar gupta was the turning point in my chess journey. Within six months, my rating jumped from 1100 to 1580 and I won my first district-level tournament. GM Gupta's personalized approach is absolutely unmatched in Karnataka.</p><div class="tau"><div class="tav" aria-hidden="true">A</div><div><div class="taname">Arjun Mehta</div><div class="tarole">Advanced Student · Age 16 · Rated 1580</div><div class="t-platform">✓ Verified Google Review</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Priya Sharma"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">My 8-year-old daughter was shy and struggled terribly with focus in school. After just 3 months at Gupta Classes, her concentration improved dramatically and she absolutely loves chess now. Best decision we ever made as parents.</p><div class="tau"><div class="tav" aria-hidden="true">P</div><div><div class="taname">Priya Sharma</div><div class="tarole">Parent · Daughter age 8 · Karnataka</div><div class="t-platform">✓ Verified Google Review</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Ramesh Verma"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">I started learning chess at 42 — I honestly thought it was far too late.  proved me completely wrong. The beginner batches are patient, brilliantly structured, and genuinely fun. I've never felt more intellectually alive.</p><div class="tau"><div class="tav" aria-hidden="true">R</div><div><div class="taname">Ramesh Verma</div><div class="tarole">Adult Beginner · Age 42 · Gurgaon</div><div class="t-platform">✓ Verified Google Review</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Sneha Kulkarni"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">The online classes are incredibly well-organised. The shared Lichess analysis boards make it feel exactly like you're in the room with the coach. I train from Bangalore and have not missed a single session in 8 months.</p><div class="tau"><div class="tav" aria-hidden="true">S</div><div><div class="taname">Sneha Kulkarni</div><div class="tarole">Online Student · Age 24 · Bangalore</div><div class="t-platform">✓ Zoom Student · Online Batch</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Ahmed Al-Rashidi"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">I joined from Dubai and was sceptical whether online chess coaching could match in-person quality. It absolutely exceeded my expectations. The timezone worked perfectly — evening UAE time matches the morning batch in India. Highly recommended for international students.</p><div class="tau"><div class="tav" aria-hidden="true">A</div><div><div class="taname">Ahmed Al-Rashidi</div><div class="tarole">International Student · Dubai, UAE · Online</div><div class="t-platform">🌍 International Online Student</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Karan Bose"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">Tournament prep coaching here is in a completely different league. GM Gupta's psychological preparation helped me stay composed under pressure. I earned my first FIDE rating at the national open this year — a dream come true!</p><div class="tau"><div class="tav" aria-hidden="true">K</div><div><div class="taname">Karan Bose</div><div class="tarole">Competitive Player · Age 19 · FIDE Rated</div><div class="t-platform">✓ Verified Google Review</div></div></div></div>
+        <div class="tcard" role="article" aria-label="Testimonial from Nandini Joshi"><div class="tstars" aria-label="5 star rating">★★★★★</div><p class="tq">Our school partnered with Ankit kumar gupta two years ago. The measurable impact on students' academic performance and cognitive skills has been remarkable. A truly professional and inspiring team of coaches.</p><div class="tau"><div class="tav" aria-hidden="true">N</div><div><div class="taname">Nandini Joshi</div><div class="tarole">School Principal · Karnataka Public School, Noida</div><div class="t-platform">✓ Institutional Partner</div></div></div></div>
+      </div>
+    </div>
+    <div class="carrs"><button class="carr" onclick="cNav(-1)">‹</button><button class="carr" onclick="cNav(1)">›</button></div>
+    <div class="cdots" id="cdts"></div>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- INTERACTIVE CHESS -->
+<section id="chess-section" class="sec sd">
+  <div class="chess-wrap">
+    <div class="chess-intro rv">
+      <div class="seye">Try Before You Learn</div>
+      <h2 class="sh2 lt" style="text-align:left;margin-bottom:16px">Play Chess <span style="color:var(--gold)">Right Here</span></h2>
+      <p class="sp lt" style="text-align:left;margin:0 0 24px 0">Experience the game firsthand. Play against our AI, or two-player mode with a friend — right on this page.</p>
+      <!-- TIMEZONE / GLOBAL STRIP -->
+      <div class="global-strip" role="region" aria-label="Online class timezone information">
+        <div class="gs-label">🌐 Online Classes</div>
+        <div class="tz-list">
+          <div class="tz-item"><span class="tz-dot"></span>India IST · 7 AM – 9 PM</div>
+          <div class="tz-item"><span class="tz-dot"></span>UAE (GST) · 5:30 AM – 7:30 PM</div>
+          <div class="tz-item"><span class="tz-dot"></span>UK (BST) · 2:30 AM – 4:30 PM</div>
+          <div class="tz-item"><span class="tz-dot"></span>US EST · 9:30 PM – 11:30 AM</div>
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:20px;align-items:center">
+        <div class="online-badge"><span class="online-dot"></span>Live via Zoom</div>
+        <div class="online-badge" style="color:rgba(100,180,255,.8);border-color:rgba(100,180,255,.2);background:rgba(100,180,255,.06)">💻 Google Meet</div>
+        <div class="online-badge" style="color:rgba(200,120,255,.8);border-color:rgba(200,120,255,.2);background:rgba(200,120,255,.06)">📋 Lichess Boards</div>
+      </div>
+      <div class="chess-modes" role="group" aria-label="Game mode selection">
+        <button class="cmode-btn active" id="btn-ai" onclick="setMode('ai')" aria-pressed="true">♟ vs AI</button>
+        <button class="cmode-btn" id="btn-2p" onclick="setMode('2p')" aria-pressed="false">♞ Two Player</button>
+        <button class="cmode-btn" id="btn-free" onclick="setMode('free')" aria-pressed="false">♛ Free Explore</button>
+      </div>
+      <div class="chess-status-bar">
+        <div class="status-dot"></div>
+        <div class="status-txt" id="status-txt">White to move — your turn!</div>
+      </div>
+      <div class="ai-thinking" id="ai-thinking">
+        <div class="ai-dot"></div><div class="ai-dot"></div><div class="ai-dot"></div>
+        <div class="ai-think-txt">GM AI is thinking...</div>
+      </div>
+      <div style="margin-top:14px">
+        <div class="captured-label">Captured by White</div>
+        <div class="captured-row" id="cap-white"></div>
+        <div class="captured-label" style="margin-top:8px">Captured by Black</div>
+        <div class="captured-row" id="cap-black"></div>
+      </div>
+      <div class="move-history">
+        <div class="mh-title">Move History</div>
+        <div class="mh-grid" id="mh-grid"></div>
+      </div>
+      <div class="chess-controls" role="group" aria-label="Chess game controls">
+        <button class="cc-btn" onclick="undoMove()" aria-label="Undo last move">↩ Undo</button>
+        <button class="cc-btn" onclick="flipBoard()" aria-label="Flip board perspective">⇅ Flip Board</button>
+        <button class="cc-btn" onclick="hintMove()" aria-label="Show a hint move">💡 Hint</button>
+        <button class="cc-btn danger" onclick="resetGame()" aria-label="Start a new game">✕ New Game</button>
+      </div>
+      <div class="chess-tip">
+        <p>💡 <strong>Learning tip:</strong> Watch how pieces control the center. At Ankit kumar gupta, we turn these intuitions into structured mastery. <a href="#register">Book your free trial →</a></p>
+      </div>
+    </div>
+    <div class="rv" style="transition-delay:.15s">
+      <div class="board-outer">
+        <div id="board-files-top" class="board-files"></div>
+        <div id="board-rows"></div>
+        <div id="board-files-bot" class="board-files-bot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="promo-modal" id="promo-modal">
+  <div class="promo-box">
+    <h3 style="color:var(--chalk)">Pawn Promotion!</h3>
+    <p>Choose a piece to promote your pawn to</p>
+    <div class="promo-pieces" id="promo-pieces"></div>
+  </div>
+</div>
+<div class="cdiv"></div>
+
+<!-- PRICING -->
+<section id="pricing" class="sec sc">
+  <div class="sh rv"><div class="seye">Investment in Excellence</div><h2 class="sh2">Training Plans &amp; Pricing</h2><p class="sp">Transparent pricing, zero hidden fees. Every plan includes our full training library and student community access.</p></div>
+  <!-- CURRENCY TOGGLE -->
+  <div class="price-toggle rv" style="transition-delay:.05s" role="group" aria-label="Currency selector">
+    <span id="lbl-inr" class="active" aria-live="polite"> </span>
+    <button class="ptoggle-switch" id="currToggle" onclick="toggleCurr()" aria-label="Toggle between  and  pricing" aria-pressed="false">
+      <div class="ptoggle-knob"></div>
+    </button>
+    <span id="lbl-usd"> </span>
+  </div>
+  <div class="pgrid rv" style="transition-delay:.1s">
+    <div class="pcard"><div class="ptier">Basic</div><div class="pname">Pawn</div><div class="pprice"><span class="pcur" id="cur1"></span><span class="pamt" id="amt1" data-inr="1,499" data-usd="18">1,499</span><span class="pper"></span></div><span class="price-usd" id="usd1">≈ 18  / month</span><div class="pdiv"></div><ul class="pfl"><li>2 group classes per week</li><li>Batch size: up to 12 students</li><li>Beginner &amp; Intermediate level</li><li>Puzzle library access</li><li>Monthly progress report</li><li>WhatsApp study group</li></ul><button class="pbtn pb-out" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Book Free Trial</button></div>
+    <div class="pcard feat"><div class="ftag">♛ Most Popular</div><div class="ptier">Standard</div><div class="pname">Knight</div><div class="pprice"><span class="pcur" id="cur2"></span><span class="pamt" id="amt2" data-inr="2,999" data-usd="36">2,999</span><span class="pper"></span></div><span class="price-usd" id="usd2">≈ 36  / month</span><div class="pdiv"></div><ul class="pfl"><li>4 group classes per week</li><li>Batch size: up to 8 students</li><li>All levels — personalised path</li><li>Engine-assisted game analysis</li><li>Weekly progress report</li><li>2 Tournament prep sessions</li><li>Priority doubt-clearing slots</li></ul><button class="pbtn pb-g" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Book Free Trial</button></div>
+    <div class="pcard"><div class="ptier">Premium</div><div class="pname">Grandmaster</div><div class="pprice"><span class="pcur" id="cur3"></span><span class="pamt" id="amt3" data-inr="5,999" data-usd="72">5,999</span><span class="pper"></span></div><span class="price-usd" id="usd3">≈ 72  / month</span><div class="pdiv"></div><ul class="pfl"><li>Daily 1:1 coaching sessions</li><li>Private — just you &amp; the coach</li><li>Custom study plan &amp; repertoire</li><li>Full tournament preparation</li><li>Daily progress tracking</li><li>Unlimited doubt-clearing</li><li>FIDE rating roadmap</li><li>Direct coach hotline access</li></ul><button class="pbtn pb-out" onclick="document.getElementById('register').scrollIntoView({behavior:'smooth'})">Book Free Trial</button></div>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- REGISTER -->
+<section id="register" class="sec sd" aria-labelledby="register-heading">
+  <div class="sh rv"><div class="seye">Join Today — First Class Free</div><h2 class="sh2 lt" id="register-heading">Book Your Free Trial Class</h2><p class="sp lt">Fill in the form below. Our team will reach out within 24 hours to confirm your batch and schedule your free trial class.</p></div>
+  <!-- CTA TRIAL BAR -->
+  <div class="cta-trial-bar rv" style="max-width:800px;margin:0 auto 32px;transition-delay:.05s">
+    <div>
+      <h3>♟ First Class is Completely Free</h3>
+      <p>No credit card. No commitment. Online (Zoom/Meet) or in-person at our Karnataka centre. International students welcome.</p>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:8px;align-items:flex-end;flex-shrink:0">
+      <div class="online-badge"><span class="online-dot"></span>Available Online Worldwide</div>
+      <div style="font-size:11px;color:rgba(246,243,236,.3);text-align:right">Response within 24 hrs</div>
+    </div>
+  </div>
+  <div class="fbox rv" style="transition-delay:.1s">
+    <form id="regForm" novalidate aria-label="Registration form">
+    <div class="fg2">
+      <div class="fg" id="fg-name">
+        <label class="fl" for="reg-name">Full Name <span style="color:#e05555">*</span></label>
+        <input type="text" class="fi" id="reg-name" name="name" placeholder="Your full name" required aria-required="true" autocomplete="name">
+        <span class="field-error" role="alert">Please enter your full name</span>
+      </div>
+      <div class="fg" id="fg-age">
+        <label class="fl" for="reg-age">Age</label>
+        <input type="number" class="fi" id="reg-age" name="age" placeholder="Your age" min="5" max="99" aria-describedby="age-hint">
+        <span id="age-hint" style="font-size:11px;color:rgba(246,243,236,.25);margin-top:3px">Age 5 to 99 — all are welcome!</span>
+      </div>
+      <div class="fg" id="fg-phone">
+        <label class="fl" for="reg-phone">Phone / WhatsApp <span style="color:#e05555">*</span></label>
+        <input type="tel" class="fi" id="reg-phone" name="phone" placeholder="+91 or international number" required aria-required="true" autocomplete="tel">
+        <span class="field-error" role="alert">Please enter a valid phone number</span>
+      </div>
+      <div class="fg" id="fg-email">
+        <label class="fl" for="reg-email">Email Address <span style="color:#e05555">*</span></label>
+        <input type="email" class="fi" id="reg-email" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email">
+        <span class="field-error" role="alert">Please enter a valid email address</span>
+      </div>
+      <div class="fg" id="fg-location">
+        <label class="fl" for="reg-location">Country / City</label>
+        <input type="text" class="fi" id="reg-location" name="location" placeholder="e.g. Karnataka, Dubai, London..." autocomplete="country-name">
+      </div>
+      <div class="fg" id="fg-timezone">
+        <label class="fl" for="reg-timezone">Your Timezone (for online classes)</label>
+        <select class="fi" id="reg-timezone" name="timezone">
+          <option value="">Select timezone</option>
+          <option>IST — India Standard Time (UTC+5:30)</option>
+          <option>GST — Gulf Standard Time / UAE (UTC+4)</option>
+          <option>BST — British Summer Time / UK (UTC+1)</option>
+          <option>EST — Eastern US (UTC-5)</option>
+          <option>PST — Pacific US (UTC-8)</option>
+          <option>SGT — Singapore Time (UTC+8)</option>
+          <option>AEST — Australia Eastern (UTC+10)</option>
+          <option>Other (we'll accommodate)</option>
+        </select>
+      </div>
+      <div class="fg" id="fg-level">
+        <label class="fl" for="reg-level">Experience Level <span style="color:#e05555">*</span></label>
+        <select class="fi" id="reg-level" name="level" required aria-required="true">
+          <option value="">Select level</option>
+          <option>Complete Beginner</option>
+          <option>Beginner (Know the moves)</option>
+          <option>Intermediate (Club player)</option>
+          <option>Advanced (Rated player)</option>
+          <option>Competitive (FIDE rated)</option>
+        </select>
+        <span class="field-error" role="alert">Please select your experience level</span>
+      </div>
+      <div class="fg"><label class="fl" for="reg-plan">Preferred Plan</label>
+        <select class="fi" id="reg-plan" name="plan">
+          <option value="">Select plan</option>
+          <option>Basic — Pawn (1,499/mo · ~18 )</option>
+          <option>Standard — Knight (2,999/mo · ~36 )</option>
+          <option>Premium — Grandmaster (5,999/mo · ~72 )</option>
+          <option>Not sure — advise me</option>
+        </select>
+      </div>
+      <div class="fg ff"><label class="fl" for="reg-timing">Preferred Batch Timing</label>
+        <select class="fi" id="reg-timing" name="timing">
+          <option value="">Select timing</option>
+          <option>Morning Batch — 7:00 AM to 8:30 AM IST</option>
+          <option>Afternoon Batch — 2:00 PM to 3:30 PM IST</option>
+          <option>Evening Batch — 5:30 PM to 7:00 PM IST</option>
+          <option>Weekend Batch — Sat &amp; Sun 10:00 AM IST</option>
+          <option>Online — Flexible Timing (International Students)</option>
+        </select>
+      </div>
+      <div class="fg ff"><label class="fl" for="reg-goals">Your Chess Goals (Optional)</label>
+        <textarea class="fi" id="reg-goals" name="goals" rows="4" placeholder="Tell us about your chess goals, tournament aspirations, country you're from, or any questions..."></textarea>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <button type="submit" class="bgold" id="regSubmitBtn" style="font-size:14px;padding:18px 52px" aria-label="Submit registration for free trial class">♟ &nbsp;Book My Free Trial Class</button>
+      <div class="submit-loading" id="regLoading" aria-live="polite" aria-label="Submitting...">
+        <div class="ai-dot"></div><div class="ai-dot"></div><div class="ai-dot"></div>
+        <span style="font-size:13px;color:var(--gold)">Submitting your registration...</span>
+      </div>
+      <div id="regMsg" class="form-msg" role="alert" aria-live="assertive"></div>
+      <p style="margin-top:14px;font-size:12px;color:rgba(246,243,236,.25)">Your first trial class is absolutely free. No payment until you are 100% satisfied.</p>
+    </div>
+    </form>
+  </div>
+</section>
+<div class="cdiv"></div>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="sec sc">
+  <div class="sh rv"><div class="seye">Book Your Slot</div><h2 class="sh2">Class Schedule &amp; Booking</h2><p class="sp">Select an available slot below. Gold tiles are open — click to select, then confirm your booking.</p></div>
+  <div class="swrap rv" style="transition-delay:.1s">
+    <div class="sdays"><div class="sday">MON</div><div class="sday">TUE</div><div class="sday">WED</div><div class="sday">THU</div><div class="sday">FRI</div><div class="sday">SAT</div><div class="sday">SUN</div></div>
+    <div class="sslots" id="sslots"></div>
+    <div class="sleg">
+      <div class="slegi"><div class="sld" style="background:rgba(201,168,76,.12);border:1.5px solid rgba(201,168,76,.3)"></div>Available</div>
+      <div class="slegi"><div class="sld" style="background:var(--ink);border:1.5px solid var(--ink)"></div>Selected</div>
+      <div class="slegi"><div class="sld" style="background:rgba(0,0,0,.04);border:1.5px solid var(--mist)"></div>Booked Full</div>
+    </div>
+    <div style="text-align:center;margin-top:36px"><button class="bgold" style="font-size:14px;padding:16px 44px" onclick="openBK()">Confirm Booking →</button></div>
+  </div>
+</section>
+<div class="bkmodal" id="bkm"><div class="bkmbox"><div style="font-size:52px;margin-bottom:12px">♔</div><h3>Slot Reserved!</h3><div class="sconf" id="scf">—</div><p>Our team will confirm your slot via WhatsApp within a few hours. Your first class is completely free!</p><div style="margin-top:28px;display:flex;gap:12px;justify-content:center"><button class="bgold" onclick="closeBK()">Done ✓</button><button onclick="closeBK()" style="padding:14px 24px;border-radius:3px;background:transparent;border:1.5px solid rgba(246,243,236,.2);color:var(--chalk);font-family:'DM Sans',sans-serif;font-size:13px;cursor:pointer">Back</button></div></div></div>
+<div class="cdiv"></div>
+
+<!-- BLOG -->
+<section id="blog" class="sec sd">
+  <div class="sh rv"><div class="seye">Chess Insights</div><h2 class="sh2 lt">From the Coach's Board</h2><p class="sp lt">Strategy guides, beginner tips, tournament news, and student spotlights — written by our coaches and students.</p></div>
+  <div class="bgrid rv" style="transition-delay:.1s">
+    <div class="bc"><div class="bcimg"><img src="https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=800&q=80" alt="Opening Principles" loading="lazy"></div><div class="bcbody"><div class="bcat">Strategy Guide</div><h3 class="btit">The 10 Most Powerful Opening Principles Every Chess Player Must Know</h3><p class="bexc">Whether you are a beginner or intermediate player, these universal principles form the backbone of every strong chess game.</p><div class="bmeta"><span></span><span>·</span><span>Apr 10, 2025</span><span>·</span><span>8 min read</span></div></div></div>
+    <div class="bc"><div class="bcimg"><img src="https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=500&q=80" alt="Student Victory" loading="lazy"></div><div class="bcbody"><div class="bcat">Student Spotlight</div><h3 class="btit">Arjun Mehta Wins State U-18 Championship 2025</h3><p class="bexc">Our own Arjun secured gold after 18 months of dedicated training at Ankit kumar gupta.</p><div class="bmeta"><span>Mar 22, 2025</span><span>·</span><span>4 min</span></div></div></div>
+    <div class="bc"><div class="bcimg"><img src="https://images.unsplash.com/photo-1560174038-da43ac74f01b?w=500&q=80" alt="Beginner Tips" loading="lazy"></div><div class="bcbody"><div class="bcat">Beginner Tips</div><h3 class="btit">5 Common Mistakes Beginners Make — And How to Fix Them</h3><p class="bexc">Moving the same piece twice, neglecting king safety — avoid these pitfalls from day one.</p><div class="bmeta"><span>Mar 5, 2025</span><span>·</span><span>5 min</span></div></div></div>
+  </div>
+  <div style="text-align:center;margin-top:48px" class="rv"><a href="#" class="bgh" style="display:inline-block">View All Articles &nbsp;→</a></div>
+</section>
+<div class="cdiv"></div>
+
+<!-- CONTACT -->
+<section id="contact" class="sec sc">
+  <div class="sh rv"><div class="seye">Get in Touch</div><h2 class="sh2">Contact Us</h2><p class="sp">Have questions about our programs? Drop by our centre or write to us — we respond within 24 hours.</p></div>
+  <div class="cowrap">
+    <div class="rv">
+      <div class="coit"><div class="coico">📍</div><div><div class="colab">Address</div><div class="coval">B-42, Splendid skylines singasandra, <br>bangalore 560068 Beside teatree hospital — 110009, India</div></div></div>
+      <div class="coit"><div class="coico">📞</div><div><div class="colab">Phone</div><div class="coval">+91 8660813472</div></div></div>
+      <div class="coit"><div class="coico">✉️</div><div><div class="colab">Email</div><div class="coval">chessmasterycoach@gmail.com</div></div></div>
+      <div class="coit"><div class="coico">🕐</div><div><div class="colab">Hours</div><div class="coval">Mon–Fri: 7:00 AM – 9:00 PM<br>Sat–Sun: 8:00 AM – 6:00 PM</div></div></div>
+      <div class="mapbox"><div style="text-align:center"><div style="font-size:48px;color:var(--gold);margin-bottom:8px">📍</div><div style="font-family:'Playfair Display',serif;font-size:16px;color:rgba(255,255,255,.2);font-style:italic">, bangalore 560068 Beside teatree hospital</div></div></div>
+    </div>
+    <div class="rv" style="transition-delay:.15s">
+      <form id="contactForm" novalidate aria-label="Contact form">
+      <div class="fg2">
+        <div class="fg" id="cfg-name"><label class="fl" for="con-name" style="color:var(--mid)">Your Name <span style="color:#e05555">*</span></label><input type="text" class="fi fi-lt" id="con-name" name="name" placeholder="Full name" required aria-required="true" autocomplete="name"><span class="field-error" role="alert" style="color:#c03333">Please enter your name</span></div>
+        <div class="fg" id="cfg-phone"><label class="fl" for="con-phone" style="color:var(--mid)">Phone</label><input type="tel" class="fi fi-lt" id="con-phone" name="phone" placeholder="+91 or international" autocomplete="tel"></div>
+        <div class="fg ff" id="cfg-email"><label class="fl" for="con-email" style="color:var(--mid)">Email <span style="color:#e05555">*</span></label><input type="email" class="fi fi-lt" id="con-email" name="email" placeholder="you@example.com" required aria-required="true" autocomplete="email"><span class="field-error" role="alert" style="color:#c03333">Please enter a valid email</span></div>
+        <div class="fg ff"><label class="fl" for="con-subject" style="color:var(--mid)">Subject</label><select class="fi fi-lt" id="con-subject" name="subject"><option>General Inquiry</option><option>Program Information</option><option>Pricing &amp; Plans</option><option>International / Online Classes</option><option>School Partnership</option><option>Other</option></select></div>
+        <div class="fg ff" id="cfg-msg"><label class="fl" for="con-msg" style="color:var(--mid)">Message <span style="color:#e05555">*</span></label><textarea class="fi fi-lt" id="con-msg" name="message" rows="5" placeholder="How can we help you?" required aria-required="true"></textarea><span class="field-error" role="alert" style="color:#c03333">Please enter your message</span></div>
+      </div>
+      <div style="margin-top:24px">
+        <button type="submit" class="bgold" id="conSubmitBtn" style="font-size:13px;padding:15px 40px" aria-label="Send contact message">Send Message &nbsp;→</button>
+        <div id="conMsg" class="form-msg" role="alert" aria-live="assertive"></div>
+      </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftgrid">
+    <div>
+      <div class="flogo">♔ Ankit kumar gupta</div>
+      <div class="ftagl">"Master the Game of Kings"</div>
+      <p class="fdesc">India's premier chess coaching institute — nurturing beginners, developing players, and shaping champions since 2009. FIDE Affiliated.</p>
+      <div class="fsocs"><a class="fsoc" href="#">f</a><a class="fsoc" href="#">in</a><a class="fsoc" href="#">▶</a><a class="fsoc" href="#">📸</a><a class="fsoc" href="#">𝕏</a></div>
+    </div>
+    <div><div class="fctit">Quick Links</div><ul class="flnks"><li><a href="#about">About Us</a></li><li><a href="#services">Our Programs</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#pricing">Pricing Plans</a></li><li><a href="#schedule">Class Schedule</a></li><li><a href="#register">Register Now</a></li></ul></div>
+    <div><div class="fctit">Programs</div><ul class="flnks"><li><a href="#services">Beginner Batches</a></li><li><a href="#services">Advanced Training</a></li><li><a href="#services">Tournament Prep</a></li><li><a href="#services">Online Classes</a></li><li><a href="#services">1-on-1 Coaching</a></li><li><a href="#services">School Programs</a></li></ul></div>
+    <div><div class="fctit">Contact</div><ul class="flnks"><li><a href="#">B-42, Singasandra, Bangalore 560068, Karnataka</a></li><li><a href="tel:+918660813472">+91 8660813472</a></li><li><a href="mailto:chessmasterycoach@gmail.com">chessmasterycoach@gmail.com</a></li><li><a href="#">Mon–Sun: 7AM – 9PM</a></li></ul></div>
+  </div>
+  <div class="fbot"><div class="fcopy">© 2026 Ankit Kumar Gupta. All Rights Reserved. | FIDE Affiliated | Privacy Policy</div><div class="fpc">♔ ♕ ♖ ♗ ♘ ♙</div></div>
+</footer>
+
+<script>
+// ==================== NAV / SCROLL ====================
+var pb = document.getElementById('pb');
+var mainnav = document.getElementById('mainnav');
+// Scroll handled by enhanced listener below
+
+var hbgEl = document.getElementById('hbg');
+var mobnavEl = document.getElementById('mobnav');
+hbgEl.addEventListener('click', function() {
+  hbgEl.classList.toggle('open');
+  mobnavEl.classList.toggle('open');
+  document.body.style.overflow = mobnavEl.classList.contains('open') ? 'hidden' : '';
+});
+function closeMob() {
+  hbgEl.classList.remove('open');
+  mobnavEl.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ==================== COUNT-UP ====================
+function countUp(el, target, suf) {
+  var s = 0, dur = 1800;
+  function step(ts) {
+    if (!s) s = ts;
+    var p = Math.min((ts - s) / dur, 1);
+    el.textContent = Math.floor(p * target) + (p >= 1 ? suf : '');
+    if (p < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+var statsObs = new IntersectionObserver(function(ents) {
+  ents.forEach(function(e) {
+    if (e.isIntersecting) {
+      document.querySelectorAll('.hsn[data-t]').forEach(function(el) {
+        countUp(el, +el.dataset.t, el.dataset.s || '+');
+        delete el.dataset.t;
+      });
+    }
+  });
+}, {threshold: .5});
+statsObs.observe(document.querySelector('.hstats'));
+
+// ==================== REVEAL ====================
+var ro = new IntersectionObserver(function(ents) {
+  ents.forEach(function(e) {
+    if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); }
+  });
+}, {threshold: .08});
+document.querySelectorAll('.rv').forEach(function(el) { ro.observe(el); });
+
+// ==================== LIGHTBOX ====================
+var lbD = [
+  {src:'https://images.unsplash.com/photo-1611195974226-a6a9be9dd763?w=1200&q=85', cap:'State Championship Finals — 2024'},
+  {src:'https://images.unsplash.com/photo-1580541832626-2a7131ee809f?w=1200&q=85', cap:'Beginner Batch Workshop'},
+  {src:'https://images.unsplash.com/photo-1549451371-64aa98a6f660?w=1200&q=85', cap:'Annual Award Ceremony 2024'},
+  {src:'https://images.unsplash.com/photo-1528819622765-d6bcf132f793?w=1200&q=85', cap:'1-on-1 Coaching Session'},
+  {src:'https://images.unsplash.com/photo-1586165368502-1bad197a6461?w=1200&q=85', cap:'School Chess Tournament 2023'},
+  {src:'https://images.unsplash.com/photo-1547995886-6dc09384c6e6?w=1200&q=85', cap:'GM Simultaneous Exhibition'},
+  {src:'https://images.unsplash.com/photo-1529699211952-734e80c4d42b?w=1200&q=85', cap:'Group Training Session'},
+];
+var li = 0;
+function openLB(i) { li = i; document.getElementById('lbimg').src = lbD[i].src; document.getElementById('lbcap').textContent = lbD[i].cap; document.getElementById('lb').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeLB() { document.getElementById('lb').classList.remove('open'); document.body.style.overflow = ''; }
+function lbOut(e) { if (e.target === document.getElementById('lb')) closeLB(); }
+function lbNav(d) { li = (li + d + lbD.length) % lbD.length; openLB(li); }
+document.addEventListener('keydown', function(e) {
+  if (!document.getElementById('lb').classList.contains('open')) return;
+  if (e.key === 'Escape') closeLB();
+  if (e.key === 'ArrowRight') lbNav(1);
+  if (e.key === 'ArrowLeft') lbNav(-1);
+});
+
+// ==================== CAROUSEL ====================
+var ctr = document.getElementById('ctr'), cdts = document.getElementById('cdts');
+var cards = ctr.children; var ci = 0, ct;
+function buildDots() {
+  cdts.innerHTML = '';
+  Array.from(cards).forEach(function(_, i) {
+    var d = document.createElement('button');
+    d.className = 'cdot' + (i === 0 ? ' a' : '');
+    d.onclick = function() { goTo(i); };
+    cdts.appendChild(d);
+  });
+}
+function goTo(i) {
+  ci = i;
+  ctr.style.transform = 'translateX(-' + (i * 100) + '%)';
+  cdts.querySelectorAll('.cdot').forEach(function(d, j) { d.classList.toggle('a', j === i); });
+  clearInterval(ct); ct = setInterval(function() { goTo((ci + 1) % cards.length); }, 5500);
+}
+function cNav(d) { goTo((ci + d + cards.length) % cards.length); }
+buildDots(); ct = setInterval(function() { goTo((ci + 1) % cards.length); }, 5500);
+
+// ==================== SCHEDULE ====================
+var sdData = [
+  [{t:'7:00 AM',b:'Beginner',s:'av'},{t:'7:00 AM',b:'Morning',s:'bk'},{t:'7:00 AM',b:'Morning',s:'av'},{t:'7:00 AM',b:'Beginner',s:'av'},{t:'7:00 AM',b:'Morning',s:'bk'},{t:'10:00 AM',b:'Weekend',s:'av'},{t:'10:00 AM',b:'Weekend',s:'av'}],
+  [{t:'2:00 PM',b:'Afternoon',s:'bk'},{t:'2:00 PM',b:'Afternoon',s:'av'},{t:'2:00 PM',b:'Afternoon',s:'av'},{t:'2:00 PM',b:'Intermed.',s:'bk'},{t:'2:00 PM',b:'Afternoon',s:'av'},{t:'2:00 PM',b:'Extra',s:'av'},{t:'2:00 PM',b:'Extra',s:'bk'}],
+  [{t:'5:30 PM',b:'Advanced',s:'av'},{t:'5:30 PM',b:'Evening',s:'av'},{t:'5:30 PM',b:'Evening',s:'bk'},{t:'5:30 PM',b:'Advanced',s:'av'},{t:'5:30 PM',b:'Evening',s:'av'},{t:'5:00 PM',b:'W.Evening',s:'bk'},{t:'5:00 PM',b:'W.Evening',s:'av'}],
+];
+var daysArr = ['MON','TUE','WED','THU','FRI','SAT','SUN'];
+var scEl = document.getElementById('sslots'); var selSlot = null;
+sdData.forEach(function(row) {
+  row.forEach(function(s, d) {
+    var el = document.createElement('div');
+    el.className = 'slot ' + s.s;
+    el.innerHTML = '<span class="slott">' + s.t + '</span><span class="slotb">' + (s.s === 'bk' ? 'Full' : s.b) + '</span>';
+    if (s.s === 'av') {
+      el.dataset.info = daysArr[d] + ', ' + s.t + ' — ' + s.b + ' Batch';
+      el.addEventListener('click', function() {
+        if (selSlot) { selSlot.classList.remove('sl'); selSlot.classList.add('av'); }
+        el.classList.remove('av'); el.classList.add('sl'); selSlot = el;
+      });
+    }
+    scEl.appendChild(el);
+  });
+});
+function openBK() { if (!selSlot) { alert('♟ Please select an available time slot first.'); return; } document.getElementById('scf').textContent = selSlot.dataset.info; document.getElementById('bkm').classList.add('open'); document.body.style.overflow = 'hidden'; }
+function closeBK() { document.getElementById('bkm').classList.remove('open'); document.body.style.overflow = ''; }
+document.getElementById('bkm').addEventListener('click', function(e) { if (e.target === document.getElementById('bkm')) closeBK(); });
+
+// ==================== CHESS ENGINE ====================
+var PIECES = { wK:'♔', wQ:'♕', wR:'♖', wB:'♗', wN:'♘', wP:'♙', bK:'♚', bQ:'♛', bR:'♜', bB:'♝', bN:'♞', bP:'♟' };
+
+var INIT_BOARD = [
+  ['bR','bN','bB','bQ','bK','bB','bN','bR'],
+  ['bP','bP','bP','bP','bP','bP','bP','bP'],
+  [null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null],
+  [null,null,null,null,null,null,null,null],
+  ['wP','wP','wP','wP','wP','wP','wP','wP'],
+  ['wR','wN','wB','wQ','wK','wB','wN','wR']
+];
+
+var gBoard, gTurn, gMode, gSelected, gPossible, gLastMove, gFlipped;
+var gEnPassant, gCastling, gCapW, gCapB, gMoveHist, gUndoStack, gOver;
+
+function cloneBoard(b) { return b.map(function(r) { return r.slice(); }); }
+function initGame() {
+  gBoard = cloneBoard(INIT_BOARD);
+  gTurn = 'w'; gMode = 'ai'; gSelected = null; gPossible = [];
+  gLastMove = null; gFlipped = false; gEnPassant = null;
+  gCastling = {wK:true, wQ:true, bK:true, bQ:true};
+  gCapW = []; gCapB = []; gMoveHist = []; gUndoStack = []; gOver = false;
+}
+
+function gc(p) { return p ? p[0] : null; }
+function gt(p) { return p ? p[1] : null; }
+function inB(r,c) { return r>=0&&r<8&&c>=0&&c<8; }
+
+function rawMoves(board, r, c, ep, cast) {
+  var p = board[r][c]; if (!p) return [];
+  var col = gc(p), type = gt(p), opp = col==='w'?'b':'w';
+  var moves = [];
+
+  function addSq(nr, nc) {
+    if (!inB(nr,nc)) return;
+    var t = board[nr][nc];
+    if (t && gc(t)===col) return;
+    moves.push({fr:r, fc:c, tr:nr, tc:nc});
+  }
+  function slide(dr, dc) {
+    var nr=r+dr, nc=c+dc;
+    while(inB(nr,nc)) {
+      var t=board[nr][nc];
+      if(t) { if(gc(t)===opp) moves.push({fr:r,fc:c,tr:nr,tc:nc}); break; }
+      moves.push({fr:r,fc:c,tr:nr,tc:nc});
+      nr+=dr; nc+=dc;
+    }
+  }
+
+  if (type==='P') {
+    var dir=col==='w'?-1:1, startR=col==='w'?6:1;
+    if(inB(r+dir,c)&&!board[r+dir][c]) {
+      moves.push({fr:r,fc:c,tr:r+dir,tc:c});
+      if(r===startR&&!board[r+2*dir][c]) moves.push({fr:r,fc:c,tr:r+2*dir,tc:c,dp:true});
+    }
+    [-1,1].forEach(function(dc) {
+      if(!inB(r+dir,c+dc)) return;
+      var t=board[r+dir][c+dc];
+      if(t&&gc(t)===opp) moves.push({fr:r,fc:c,tr:r+dir,tc:c+dc});
+      if(ep&&r+dir===ep.r&&c+dc===ep.c) moves.push({fr:r,fc:c,tr:r+dir,tc:c+dc,ep:true});
+    });
+  } else if(type==='N') {
+    [[-2,-1],[-2,1],[-1,-2],[-1,2],[1,-2],[1,2],[2,-1],[2,1]].forEach(function(d){addSq(r+d[0],c+d[1]);});
+  } else if(type==='B') {
+    [[-1,-1],[-1,1],[1,-1],[1,1]].forEach(function(d){slide(d[0],d[1]);});
+  } else if(type==='R') {
+    [[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){slide(d[0],d[1]);});
+  } else if(type==='Q') {
+    [[-1,-1],[-1,1],[1,-1],[1,1],[-1,0],[1,0],[0,-1],[0,1]].forEach(function(d){slide(d[0],d[1]);});
+  } else if(type==='K') {
+    [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]].forEach(function(d){addSq(r+d[0],c+d[1]);});
+    var row=col==='w'?7:0;
+    if(r===row&&c===4) {
+      if(cast[col+'K']&&!board[row][5]&&!board[row][6]&&board[row][7]===col+'R')
+        moves.push({fr:r,fc:c,tr:row,tc:6,castle:'K'});
+      if(cast[col+'Q']&&!board[row][3]&&!board[row][2]&&!board[row][1]&&board[row][0]===col+'R')
+        moves.push({fr:r,fc:c,tr:row,tc:2,castle:'Q'});
+    }
+  }
+  return moves;
+}
+
+function applyMove(board, m, promo) {
+  var nb = cloneBoard(board);
+  var p = nb[m.fr][m.fc];
+  var col = gc(p);
+  nb[m.tr][m.tc] = p; nb[m.fr][m.fc] = null;
+  if(m.ep) { var dir=col==='w'?1:-1; nb[m.tr+dir][m.tc]=null; }
+  if(m.castle) {
+    var row=col==='w'?7:0;
+    if(m.castle==='K'){nb[row][5]=nb[row][7];nb[row][7]=null;}
+    else{nb[row][3]=nb[row][0];nb[row][0]=null;}
+  }
+  if(gt(p)==='P'&&(m.tr===0||m.tr===7)) nb[m.tr][m.tc]=col+(promo||'Q');
+  return nb;
+}
+
+function findKing(board, col) {
+  for(var r=0;r<8;r++) for(var c=0;c<8;c++) if(board[r][c]===col+'K') return {r:r,c:c};
+  return null;
+}
+
+function attacked(board, r, c, byCol) {
+  for(var br=0;br<8;br++) for(var bc=0;bc<8;bc++) {
+    if(!board[br][bc]||gc(board[br][bc])!==byCol) continue;
+    var ms=rawMoves(board,br,bc,null,{wK:false,wQ:false,bK:false,bQ:false});
+    for(var i=0;i<ms.length;i++) if(ms[i].tr===r&&ms[i].tc===c) return true;
+  }
+  return false;
+}
+
+function inCheck(board, col) {
+  var k=findKing(board,col); if(!k) return false;
+  return attacked(board,k.r,k.c,col==='w'?'b':'w');
+}
+
+function legalMoves(board, col, ep, cast) {
+  var legal = [], opp=col==='w'?'b':'w';
+  for(var r=0;r<8;r++) for(var c=0;c<8;c++) {
+    if(!board[r][c]||gc(board[r][c])!==col) continue;
+    var raw=rawMoves(board,r,c,ep,cast);
+    raw.forEach(function(m) {
+      if(m.castle) {
+        var row=col==='w'?7:0;
+        if(inCheck(board,col)) return;
+        var passCols=m.castle==='K'?[5,6]:[3,2];
+        for(var i=0;i<passCols.length;i++){
+          var tb=applyMove(board,{fr:r,fc:c,tr:row,tc:passCols[i]});
+          if(inCheck(tb,col)) return;
+        }
+      }
+      var nb=applyMove(board,m);
+      if(!inCheck(nb,col)) legal.push(m);
+    });
+  }
+  return legal;
+}
+
+// Piece values & simple eval
+var PV = {P:100,N:320,B:330,R:500,Q:900,K:20000};
+var PST_P = [[0,0,0,0,0,0,0,0],[50,50,50,50,50,50,50,50],[10,10,20,30,30,20,10,10],[5,5,10,25,25,10,5,5],[0,0,0,20,20,0,0,0],[5,-5,-10,0,0,-10,-5,5],[5,10,10,-20,-20,10,10,5],[0,0,0,0,0,0,0,0]];
+var PST_N = [[-50,-40,-30,-30,-30,-30,-40,-50],[-40,-20,0,0,0,0,-20,-40],[-30,0,10,15,15,10,0,-30],[-30,5,15,20,20,15,5,-30],[-30,0,15,20,20,15,0,-30],[-30,5,10,15,15,10,5,-30],[-40,-20,0,5,5,0,-20,-40],[-50,-40,-30,-30,-30,-30,-40,-50]];
+
+function evalBoard(board) {
+  var score=0;
+  for(var r=0;r<8;r++) for(var c=0;c<8;c++) {
+    var p=board[r][c]; if(!p) continue;
+    var col=gc(p),type=gt(p),val=PV[type]||0;
+    var pr=col==='w'?r:7-r;
+    var pst=0;
+    if(type==='P') pst=PST_P[pr][c];
+    else if(type==='N') pst=PST_N[pr][c];
+    score += (col==='b'?1:-1)*(val+pst);
+  }
+  return score;
+}
+
+function minimax(board,depth,alpha,beta,maxing,ep,cast) {
+  var col=maxing?'b':'w';
+  var moves=legalMoves(board,col,ep,cast);
+  if(depth===0||moves.length===0) {
+    if(moves.length===0) return inCheck(board,col)?(maxing?-25000:25000):0;
+    return evalBoard(board);
+  }
+  if(maxing) {
+    var best=-Infinity;
+    for(var i=0;i<moves.length;i++) {
+      var nb=applyMove(board,moves[i]);
+      var v=minimax(nb,depth-1,alpha,beta,false,null,cast);
+      if(v>best) best=v; if(best>alpha) alpha=best; if(beta<=alpha) break;
+    }
+    return best;
+  } else {
+    var best=Infinity;
+    for(var i=0;i<moves.length;i++) {
+      var nb=applyMove(board,moves[i]);
+      var v=minimax(nb,depth-1,alpha,beta,true,null,cast);
+      if(v<best) best=v; if(best<beta) beta=best; if(beta<=alpha) break;
+    }
+    return best;
+  }
+}
+
+function bestAIMove() {
+  var moves=legalMoves(gBoard,'b',gEnPassant,gCastling);
+  if(!moves.length) return null;
+  moves.sort(function(){return Math.random()-.5;});
+  var best=-Infinity,bestM=null;
+  for(var i=0;i<moves.length;i++) {
+    var nb=applyMove(gBoard,moves[i]);
+    var v=minimax(nb,2,-Infinity,Infinity,false,null,Object.assign({},gCastling));
+    if(v>best){best=v;bestM=moves[i];}
+  }
+  return bestM;
+}
+
+// ---- Render ----
+function renderBoard() {
+  var filesTop=document.getElementById('board-files-top');
+  var filesBot=document.getElementById('board-files-bot');
+  var rowsEl=document.getElementById('board-rows');
+  var files=gFlipped?['h','g','f','e','d','c','b','a']:['a','b','c','d','e','f','g','h'];
+
+  filesTop.innerHTML='<div style="width:20px"></div>';
+  filesBot.innerHTML='<div style="width:20px"></div>';
+  files.forEach(function(f) {
+    var d=document.createElement('div'); d.className='blabel'; d.textContent=f;
+    filesTop.appendChild(d);
+    var d2=document.createElement('div'); d2.className='blabel'; d2.textContent=f;
+    filesBot.appendChild(d2);
+  });
+
+  rowsEl.innerHTML='';
+  var board=document.createElement('div');
+  board.id='chessboard'; board.className='chessboard';
+
+  for(var vr=0;vr<8;vr++) {
+    var r=gFlipped?7-vr:vr;
+    for(var vc=0;vc<8;vc++) {
+      var c=gFlipped?7-vc:vc;
+      var isLight=(r+c)%2===0;
+      var sq=document.createElement('div');
+      sq.className='square '+(isLight?'light':'dark');
+
+      // highlight selected
+      if(gSelected&&gSelected.r===r&&gSelected.c===c) sq.classList.add('selected');
+      // highlight possible moves
+      var isPoss=false;
+      for(var i=0;i<gPossible.length;i++) { if(gPossible[i].tr===r&&gPossible[i].tc===c){isPoss=true;break;} }
+      if(isPoss) {
+        if(gBoard[r][c]) sq.classList.add('possible-capture');
+        else sq.classList.add('possible-move');
+      }
+      // last move
+      if(gLastMove) {
+        if(gLastMove.fr===r&&gLastMove.fc===c) sq.classList.add('last-from');
+        if(gLastMove.tr===r&&gLastMove.tc===c) sq.classList.add('last-to');
+      }
+      // check
+      if(gt(gBoard[r][c])==='K'&&gc(gBoard[r][c])===gTurn&&inCheck(gBoard,gTurn)) sq.classList.add('in-check');
+
+      if(gBoard[r][c]) {
+        var span=document.createElement('span');
+        span.className='piece';
+        span.textContent=PIECES[gBoard[r][c]];
+        sq.appendChild(span);
+      }
+      (function(rr,cc){sq.addEventListener('click',function(){onSquareClick(rr,cc);});})(r,c);
+      board.appendChild(sq);
+    }
+  }
+
+  // Wrap with rank labels
+  var wrapper=document.createElement('div');
+  wrapper.style.display='grid';
+  wrapper.style.gridTemplateColumns='20px 1fr';
+
+  var rankCol=document.createElement('div');
+  rankCol.style.display='flex';
+  rankCol.style.flexDirection='column';
+  for(var rr=0;rr<8;rr++) {
+    var rank=gFlipped?rr+1:8-rr;
+    var rl=document.createElement('div');
+    rl.className='rlabel';
+    rl.style.flex='1';
+    rl.textContent=rank;
+    rankCol.appendChild(rl);
+  }
+  wrapper.appendChild(rankCol);
+  wrapper.appendChild(board);
+  rowsEl.appendChild(wrapper);
+}
+
+function updateStatus() {
+  var legal=legalMoves(gBoard,gTurn,gEnPassant,gCastling);
+  var chk=inCheck(gBoard,gTurn);
+  var txt='';
+  if(legal.length===0) {
+    gOver=true;
+    txt=chk?'Checkmate! '+(gTurn==='w'?'Black':'White')+' wins! ♛':'Stalemate — Draw!';
+  } else if(chk) {
+    txt='⚠️ Check! '+(gTurn==='w'?'White':'Black')+' is in check';
+  } else {
+    if(gMode==='free') txt='Free explore — click any piece';
+    else if(gMode==='ai') txt=gTurn==='w'?'Your turn — White to move':'AI is thinking...';
+    else txt=(gTurn==='w'?'White':'Black')+' to move';
+  }
+  document.getElementById('status-txt').textContent=txt;
+}
+
+function updateCaptured() {
+  document.getElementById('cap-white').textContent=gCapW.map(function(p){return PIECES[p]||'';}).join('');
+  document.getElementById('cap-black').textContent=gCapB.map(function(p){return PIECES[p]||'';}).join('');
+}
+
+function updateHistory() {
+  var grid=document.getElementById('mh-grid'); grid.innerHTML='';
+  for(var i=0;i<gMoveHist.length;i+=2) {
+    var num=document.createElement('div');num.className='mh-num';num.textContent=(i/2+1)+'.';
+    var wm=document.createElement('div');wm.className='mh-move'+(i===gMoveHist.length-1?' latest':'');wm.textContent=gMoveHist[i];
+    var bm=document.createElement('div');bm.className='mh-move'+(i+1===gMoveHist.length-1?' latest':'');bm.textContent=gMoveHist[i+1]||'';
+    grid.appendChild(num);grid.appendChild(wm);grid.appendChild(bm);
+  }
+  var mh=document.querySelector('.move-history');mh.scrollTop=mh.scrollHeight;
+}
+
+function moveNotation(m, captured) {
+  var p=gBoard[m.fr][m.fc], type=gt(p);
+  if(m.castle) return m.castle==='K'?'O-O':'O-O-O';
+  var f=String.fromCharCode(97+m.tc), rank=8-m.tr;
+  if(type==='P') {
+    var s=captured?String.fromCharCode(97+m.fc)+'x':'';
+    return s+f+rank;
+  }
+  return type+(captured?'x':'')+f+rank;
+}
+
+function onSquareClick(r,c) {
+  if(gOver) return;
+  if(gMode==='ai'&&gTurn==='b') return;
+
+  var p=gBoard[r][c];
+  // If clicking a possible move target
+  if(gSelected) {
+    for(var i=0;i<gPossible.length;i++) {
+      if(gPossible[i].tr===r&&gPossible[i].tc===c) {
+        doMove(gPossible[i]); return;
+      }
+    }
+  }
+  // Select piece
+  if(p&&(gMode==='free'||gc(p)===gTurn)) {
+    gSelected={r:r,c:c};
+    if(gMode==='free') {
+      gPossible=rawMoves(gBoard,r,c,gEnPassant,gCastling);
+    } else {
+      var all=legalMoves(gBoard,gTurn,gEnPassant,gCastling);
+      gPossible=all.filter(function(m){return m.fr===r&&m.fc===c;});
+    }
+  } else {
+    gSelected=null; gPossible=[];
+  }
+  renderBoard();
+}
+
+function doMove(m, skipAI) {
+  // save undo state
+  gUndoStack.push({
+    board:cloneBoard(gBoard),turn:gTurn,ep:gEnPassant,
+    cast:Object.assign({},gCastling),lm:gLastMove,
+    capW:gCapW.slice(),capB:gCapB.slice(),hist:gMoveHist.slice()
+  });
+
+  var p=gBoard[m.fr][m.fc], col=gc(p), type=gt(p);
+  var captured=gBoard[m.tr][m.tc];
+  var epCap=m.ep?(col==='w'?gBoard[m.tr+1][m.tc]:gBoard[m.tr-1][m.tc]):null;
+
+  // Pawn promotion?
+  if(type==='P'&&(m.tr===0||m.tr===7)) {
+    showPromo(col,m);
+    return;
+  }
+  finishMove(m,col,type,captured,epCap,null,skipAI);
+}
+
+function finishMove(m,col,type,captured,epCap,promo,skipAI) {
+  var notation=moveNotation(m, captured||epCap);
+  gBoard=applyMove(gBoard,m,promo);
+  gLastMove=m;
+  var cap=captured||(epCap||null);
+  if(cap) { if(col==='w') gCapW.push(cap); else gCapB.push(cap); }
+  gEnPassant=m.dp?{r:m.tr+(col==='w'?1:-1),c:m.tc}:null;
+  if(type==='K'){gCastling[col+'K']=false;gCastling[col+'Q']=false;}
+  if(type==='R'){if(m.fc===0)gCastling[col+'Q']=false;if(m.fc===7)gCastling[col+'K']=false;}
+  gMoveHist.push(notation);
+  gTurn=gTurn==='w'?'b':'w';
+  gSelected=null; gPossible=[];
+  renderBoard(); updateStatus(); updateCaptured(); updateHistory();
+  if(!skipAI&&gMode==='ai'&&gTurn==='b'&&!gOver) triggerAI();
+}
+
+function showPromo(col,m) {
+  var modal=document.getElementById('promo-modal');
+  var pp=document.getElementById('promo-pieces');
+  pp.innerHTML='';
+  ['Q','R','B','N'].forEach(function(type) {
+    var btn=document.createElement('div');
+    btn.className='promo-piece';
+    btn.textContent=PIECES[col+type];
+    btn.onclick=function() {
+      modal.classList.remove('open');
+      var p=gBoard[m.fr][m.fc], cap=gBoard[m.tr][m.tc];
+      finishMove(m,col,'P',cap,null,type,false);
+    };
+    pp.appendChild(btn);
+  });
+  modal.classList.add('open');
+}
+
+function triggerAI() {
+  document.getElementById('ai-thinking').classList.add('show');
+  setTimeout(function() {
+    var best=bestAIMove();
+    document.getElementById('ai-thinking').classList.remove('show');
+    if(best) doMove(best,true);
+    else { updateStatus(); }
+  }, 50+Math.random()*400);
+}
+
+function setMode(mode) {
+  gMode=mode;
+  document.querySelectorAll('.cmode-btn').forEach(function(b){b.classList.remove('active');});
+  var ids={ai:'btn-ai','2p':'btn-2p',free:'btn-free'};
+  var el=document.getElementById(ids[mode]);
+  if(el) el.classList.add('active');
+  resetGame();
+}
+
+function resetGame() {
+  initGame();
+  document.getElementById('ai-thinking').classList.remove('show');
+  renderBoard(); updateStatus(); updateCaptured(); updateHistory();
+}
+
+function undoMove() {
+  if(!gUndoStack.length) return;
+  var times=(gMode==='ai'&&gUndoStack.length>=2)?2:1;
+  while(times-->0&&gUndoStack.length>0) {
+    var s=gUndoStack.pop();
+    gBoard=s.board;gTurn=s.turn;gEnPassant=s.ep;gCastling=s.cast;
+    gLastMove=s.lm;gCapW=s.capW;gCapB=s.capB;gMoveHist=s.hist;
+  }
+  gOver=false;gSelected=null;gPossible=[];
+  renderBoard();updateStatus();updateCaptured();updateHistory();
+}
+
+function flipBoard() { gFlipped=!gFlipped; renderBoard(); }
+
+function hintMove() {
+  if(gOver) return;
+  var moves=legalMoves(gBoard,gTurn,gEnPassant,gCastling);
+  if(!moves.length) return;
+  var m=moves[Math.floor(Math.random()*moves.length)];
+  var board=document.getElementById('chessboard');
+  Array.from(board.children).forEach(function(sq,idx) {
+    var vr=Math.floor(idx/8),vc=idx%8;
+    var r=gFlipped?7-vr:vr, c=gFlipped?7-vc:vc;
+    if(r===m.fr&&c===m.fc||r===m.tr&&c===m.tc) {
+      sq.style.outline='3px solid var(--gold)';
+      sq.style.outlineOffset='-3px';
+      setTimeout(function(){sq.style.outline='';sq.style.outlineOffset='';},2000);
+    }
+  });
+}
+
+// ==================== FLOATING CTA ====================
+var floatingCTA = document.getElementById('floatingCTA');
+window.addEventListener('scroll', function() {
+  var t = window.scrollY, h = document.body.scrollHeight - window.innerHeight;
+  pb.style.width = (t / h * 100) + '%';
+  mainnav.style.top = t > 80 ? '0' : '41px';
+  if (t > 400) floatingCTA.classList.add('show');
+  else floatingCTA.classList.remove('show');
+  // Hide floating CTA when register section is in view
+  var reg = document.getElementById('register');
+  if (reg) {
+    var r = reg.getBoundingClientRect();
+    if (r.top < window.innerHeight && r.bottom > 0) floatingCTA.classList.remove('show');
+  }
+}, {passive: true});
+
+// ==================== CHESS MODE BUTTON ARIA ====================
+document.querySelectorAll('.cmode-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() {
+    document.querySelectorAll('.cmode-btn').forEach(function(b){ b.setAttribute('aria-pressed','false'); });
+    btn.setAttribute('aria-pressed','true');
+  });
+});
+
+// ==================== CURRENCY TOGGLE ====================
+var currIs = false;
+function toggleCurr() {
+  currIs = !currIs;
+  var tog = document.getElementById('currToggle');
+  tog.classList.toggle('on', currIs);
+  tog.setAttribute('aria-pressed', currIs);
+  document.getElementById('lbl-inr').classList.toggle('active', !currIs);
+  document.getElementById('lbl-usd').classList.toggle('active', currIs);
+  [1,2,3].forEach(function(i) {
+    var amt = document.getElementById('amt'+i);
+    var cur = document.getElementById('cur'+i);
+    var usd = document.getElementById('usd'+i);
+    if (currIs) {
+      amt.textContent = amt.dataset.usd;
+      cur.textContent = '';
+      if (usd) { usd.textContent = '≈ ' + amt.dataset.inr + '  / month'; usd.classList.add('show'); }
+    } else {
+      amt.textContent = amt.dataset.inr;
+      cur.textContent = '';
+      if (usd) { usd.textContent = '≈ ' + amt.dataset.usd + '  / month'; usd.classList.remove('show'); }
+    }
+  });
+}
+
+// ==================== FORM VALIDATION ====================
+function validateField(input, groupId, isValid) {
+  var group = document.getElementById(groupId);
+  if (!group) return;
+  group.classList.toggle('invalid', !isValid);
+  group.classList.toggle('valid', isValid);
+}
+
+function validateEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+/.test(v); }
+function validatePhone(v) { return v.replace(/[\s\-\+\(\)]/g,'').length >= 7; }
+
+// Registration Form
+var regForm = document.getElementById('regForm');
+if (regForm) {
+  // Real-time validation on blur
+  var regName = document.getElementById('reg-name');
+  var regPhone = document.getElementById('reg-phone');
+  var regEmail = document.getElementById('reg-email');
+  var regLevel = document.getElementById('reg-level');
+  if (regName) regName.addEventListener('blur', function() { validateField(this, 'fg-name', this.value.trim().length >= 2); });
+  if (regPhone) regPhone.addEventListener('blur', function() { validateField(this, 'fg-phone', validatePhone(this.value)); });
+  if (regEmail) regEmail.addEventListener('blur', function() { validateField(this, 'fg-email', validateEmail(this.value)); });
+  if (regLevel) regLevel.addEventListener('change', function() { validateField(this, 'fg-level', this.value !== ''); });
+
+  regForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var valid = true;
+    if (!regName || regName.value.trim().length < 2) { validateField(regName, 'fg-name', false); valid = false; }
+    if (!regPhone || !validatePhone(regPhone.value)) { validateField(regPhone, 'fg-phone', false); valid = false; }
+    if (!regEmail || !validateEmail(regEmail.value)) { validateField(regEmail, 'fg-email', false); valid = false; }
+    if (!regLevel || regLevel.value === '') { validateField(regLevel, 'fg-level', false); valid = false; }
+    if (!valid) {
+      var firstInvalid = regForm.querySelector('.invalid .fi');
+      if (firstInvalid) firstInvalid.focus();
+      return;
+    }
+    // Show loading
+    var btn = document.getElementById('regSubmitBtn');
+    var loading = document.getElementById('regLoading');
+    var msg = document.getElementById('regMsg');
+    btn.disabled = true; btn.style.opacity = '.5';
+    loading.classList.add('show');
+    msg.className = 'form-msg';
+
+    var templateParams = {
+      to_email: 'chessmasterycoach@gmail.com',
+      student_name: document.getElementById('reg-name').value.trim(),
+      student_email: document.getElementById('reg-email').value.trim(),
+      student_phone: document.getElementById('reg-phone').value.trim(),
+      student_age: document.getElementById('reg-age').value || 'Not specified',
+      student_location: document.getElementById('reg-location').value || 'Not specified',
+      student_timezone: document.getElementById('reg-timezone').value || 'Not specified',
+      student_level: document.getElementById('reg-level').value,
+      preferred_plan: document.getElementById('reg-plan').value || 'Not specified',
+      preferred_timing: document.getElementById('reg-timing').value || 'Not specified',
+      chess_goals: document.getElementById('reg-goals').value || 'Not specified',
+      submission_time: new Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'})
+    };
+
+    emailjs.send('service_jguyq1t', 'template_isbdp87', templateParams)
+      .then(function() {
+        loading.classList.remove('show');
+        btn.disabled = false; btn.style.opacity = '1';
+        msg.className = 'form-msg success';
+        msg.textContent = '♔ Registration received! We will call you within 24 hours to schedule your FREE trial class.';
+        regForm.reset();
+        regForm.querySelectorAll('.fg').forEach(function(g){ g.classList.remove('valid','invalid'); });
+        msg.scrollIntoView({behavior:'smooth', block:'nearest'});
+      }, function(error) {
+        loading.classList.remove('show');
+        btn.disabled = false; btn.style.opacity = '1';
+        msg.className = 'form-msg error';
+        msg.textContent = '⚠ Something went wrong. Please WhatsApp us at +91 8660813472 or try again.';
+        console.error('EmailJS error:', error);
+        msg.scrollIntoView({behavior:'smooth', block:'nearest'});
+      });
+  });
+}
+
+// Contact Form
+var conForm = document.getElementById('contactForm');
+if (conForm) {
+  var conName = document.getElementById('con-name');
+  var conEmail = document.getElementById('con-email');
+  var conMsg = document.getElementById('con-msg');
+  if (conName) conName.addEventListener('blur', function() { validateField(this, 'cfg-name', this.value.trim().length >= 2); });
+  if (conEmail) conEmail.addEventListener('blur', function() { validateField(this, 'cfg-email', validateEmail(this.value)); });
+
+  conForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var valid = true;
+    if (!conName || conName.value.trim().length < 2) { validateField(conName, 'cfg-name', false); valid = false; }
+    if (!conEmail || !validateEmail(conEmail.value)) { validateField(conEmail, 'cfg-email', false); valid = false; }
+    if (!conMsg || conMsg.value.trim().length < 5) { validateField(conMsg, 'cfg-msg', false); valid = false; }
+    if (!valid) return;
+    var btn = document.getElementById('conSubmitBtn');
+    var msgEl = document.getElementById('conMsg');
+    btn.disabled = true; btn.style.opacity = '.5';
+    msgEl.className = 'form-msg';
+
+    var contactParams = {
+      to_email: 'chessmasterycoach@gmail.com',
+      sender_name: conName.value.trim(),
+      sender_email: conEmail.value.trim(),
+      sender_phone: document.getElementById('con-phone').value || 'Not provided',
+      subject: document.getElementById('con-subject').value,
+      message: conMsg.value.trim(),
+      submission_time: new Date().toLocaleString('en-IN', {timeZone: 'Asia/Kolkata'})
+    };
+
+    emailjs.send('service_jguyq1t', 'template_d8a00iw', contactParams)
+      .then(function() {
+        btn.disabled = false; btn.style.opacity = '1';
+        msgEl.className = 'form-msg success';
+        msgEl.textContent = '♟ Message received! We will respond within 24 hours.';
+        conForm.reset();
+        conForm.querySelectorAll('.fg').forEach(function(g){ g.classList.remove('valid','invalid'); });
+      }, function(error) {
+        btn.disabled = false; btn.style.opacity = '1';
+        msgEl.className = 'form-msg error';
+        msgEl.textContent = '⚠ Something went wrong. Please WhatsApp us at +91 8660813472 or try again.';
+        console.error('EmailJS error:', error);
+      });
+  });
+}
+
+// ==================== IMPROVED LIGHTBOX ====================
+function openLB(i) {
+  li = i;
+  var lb = document.getElementById('lb');
+  var img = document.getElementById('lbimg');
+  var cap = document.getElementById('lbcap');
+  lb.classList.add('open','loading');
+  lb.setAttribute('aria-hidden','false');
+  img.src = '';
+  cap.textContent = lbD[i].cap;
+  document.body.style.overflow = 'hidden';
+  var newImg = new Image();
+  newImg.onload = function() { img.src = lbD[i].src; img.style.opacity = '1'; lb.classList.remove('loading'); };
+  newImg.onerror = function() { img.src = ''; lb.classList.remove('loading'); cap.textContent = lbD[i].cap + ' (Image unavailable)'; img.style.opacity = '1'; };
+  newImg.src = lbD[i].src;
+  img.alt = lbD[i].cap;
+}
+function closeLB() {
+  var lb = document.getElementById('lb');
+  lb.classList.remove('open','loading');
+  lb.setAttribute('aria-hidden','true');
+  document.body.style.overflow = '';
+}
+function lbOut(e) { if (e.target === document.getElementById('lb')) closeLB(); }
+function lbNav(d) { li = (li + d + lbD.length) % lbD.length; openLB(li); }
+
+// Make gallery items keyboard accessible
+document.querySelectorAll('.gi').forEach(function(gi, idx) {
+  gi.setAttribute('tabindex','0');
+  gi.setAttribute('role','button');
+  gi.setAttribute('aria-label', (gi.querySelector('.gisub') ? gi.querySelector('.gisub').textContent : 'Gallery image ' + (idx+1)));
+  gi.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); gi.click(); }
+  });
+});
+
+// Lightbox ARIA setup
+var lbEl = document.getElementById('lb');
+if (lbEl) { lbEl.setAttribute('role','dialog'); lbEl.setAttribute('aria-modal','true'); lbEl.setAttribute('aria-hidden','true'); lbEl.setAttribute('aria-label','Image lightbox'); }
+// Loading indicator in lightbox
+if (lbEl && !lbEl.querySelector('.lb-loading')) {
+  var loadInd = document.createElement('div');
+  loadInd.className = 'lb-loading';
+  loadInd.innerHTML = '<div class="ai-dot"></div><div class="ai-dot"></div><div class="ai-dot"></div>';
+  lbEl.querySelector('.lbi').appendChild(loadInd);
+}
+
+// ==================== LAZY IMAGE FALLBACKS ====================
+document.querySelectorAll('img[loading="lazy"]').forEach(function(img) {
+  img.setAttribute('decoding','async');
+  if (!img.getAttribute('onerror')) {
+    img.addEventListener('error', function() {
+      var fb = img.nextElementSibling;
+      if (fb && fb.classList.contains('gi-fallback')) {
+        img.style.display = 'none';
+        fb.style.display = 'flex';
+      }
+    });
+  }
+});
+
+// ==================== NAV KEYBOARD ACCESSIBILITY ====================
+document.querySelectorAll('.nlinks a, .mobnav a').forEach(function(a) {
+  a.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter') a.click();
+  });
+});
+// Hamburger keyboard
+var hbgEl2 = document.getElementById('hbg');
+if (hbgEl2) {
+  hbgEl2.setAttribute('role','button');
+  hbgEl2.setAttribute('aria-label','Toggle navigation menu');
+  hbgEl2.setAttribute('tabindex','0');
+  hbgEl2.addEventListener('keydown', function(e) {
+    if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); hbgEl2.click(); }
+  });
+}
+
+// ==================== CHESS MODE FIX ====================
+// Override setMode to also update ARIA
+var _origSetMode = setMode;
+setMode = function(mode) {
+  _origSetMode(mode);
+  var ids = {ai:'btn-ai','2p':'btn-2p',free:'btn-free'};
+  Object.keys(ids).forEach(function(m) {
+    var b = document.getElementById(ids[m]);
+    if(b) b.setAttribute('aria-pressed', m === mode ? 'true' : 'false');
+  });
+};
+
+// ---- Init Chess ----
+initGame();
+renderBoard();
+updateStatus();
+</script>
+
+<div class="whatsapp-float" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background:#25d366;color:#FFF;border-radius:50px;font-size:30px;box-shadow:2px 2px 3px #999;z-index:100;cursor:pointer;animation:whatsapp-bounce 2s infinite;">
+<a href="https://wa.me/918660813472?text=Hi!%20I%27m%20interested%20in%20your%20chess%20trial%20class." style="color:#FFF;text-decoration:none;display:flex;align-items:center;justify-content:center;height:100%;font-size:28px;" target="_blank">&#x1F4AC;</a>
+</div>
+<style>
+@keyframes whatsapp-bounce{0%,20%,50%,80%,100%{transform:translateY(0);}40%{transform:translateY(-10px);}60%{transform:translateY(-5px);}}
+/* Gold CTA sits above WhatsApp button to prevent overlap */
+.floating-cta{bottom:116px!important;}
+@media(max-width:768px){.floating-cta{bottom:100px!important;right:16px!important;}.whatsapp-float{bottom:28px!important;right:16px!important;}}
+</style>
+</body>
+</html>
