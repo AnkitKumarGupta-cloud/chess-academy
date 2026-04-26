@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Gupta Chess Classes – Master the Game of Kings</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=Cinzel+Decorative:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 <script>emailjs.init('kwFNmSY4lN9R0LvkP');</script>
 <style>
@@ -74,11 +74,11 @@ body {
 }
 .logo-icon {
   width:42px; height:42px;
-  background:var(--gold); border-radius:4px;
   display:flex; align-items:center; justify-content:center;
-  font-size:24px;
   box-shadow:0 2px 8px rgba(201,168,76,0.38);
   flex-shrink:0;
+  border-radius:10px;
+  overflow:hidden;
 }
 .logo-text { line-height:1.1; }
 .logo-text .brand {
@@ -1017,7 +1017,7 @@ footer {
 <!-- ══ HEADER ══ -->
 <header id="header">
   <a class="logo" href="#" onclick="nav('home')">
-    <div class="logo-icon">♞</div>
+    <div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="42" height="42"><defs><linearGradient id="bgG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0e0e16"/><stop offset="100%" style="stop-color:#1a1a28"/></linearGradient><linearGradient id="goldG" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f5d57a"/><stop offset="55%" style="stop-color:#d4a017"/><stop offset="100%" style="stop-color:#a07800"/></linearGradient><filter id="glow"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="52" height="52" rx="12" fill="url(#bgG)"/><rect x="2" y="2" width="48" height="48" rx="10" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.6"/><rect x="4" y="4" width="5" height="5" fill="#d4a017" opacity="0.12"/><rect x="9" y="4" width="5" height="5" fill="#d4a017" opacity="0.06"/><rect x="4" y="9" width="5" height="5" fill="#d4a017" opacity="0.06"/><rect x="9" y="9" width="5" height="5" fill="#d4a017" opacity="0.12"/><rect x="24.5" y="5" width="3" height="9" rx="1.5" fill="url(#goldG)" filter="url(#glow)"/><rect x="21" y="8" width="10" height="3" rx="1.5" fill="url(#goldG)" filter="url(#glow)"/><text x="26" y="42" text-anchor="middle" font-family="Cinzel Decorative, Georgia, serif" font-size="30" font-weight="700" fill="url(#goldG)" filter="url(#glow)">G</text></svg></div>
     <div class="logo-text">
       <span class="brand">GUPTA</span>
       <span class="sub">Chess Classes</span>
@@ -1091,7 +1091,7 @@ footer {
             <div class="stat-label">Students Trained</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">3+</div>
+            <div class="stat-num">8+</div>
             <div class="stat-label">Years Experience</div>
           </div>
           <div class="stat-item">
@@ -1129,34 +1129,7 @@ footer {
       </div>
     </div>
 
-    <!-- TESTIMONIALS -->
-    <div class="section section-sm">
-      <div style="margin-bottom:32px" class="reveal">
-        <div class="section-tag">What Students Say</div>
-        <h2 class="section-title">Stories from Our Community</h2>
-        <div class="divider"></div>
-      </div>
-      <div class="testi-grid reveal">
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"My son went from not knowing how pieces move to winning his school tournament in 8 months. The coaches are incredible — patient, knowledgeable, and genuinely invested."</p>
-          <div class="testi-author">Priya Sharma</div>
-          <div class="testi-role">Parent · Beginner Batch</div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"I was stuck at 1200 ELO for two years. After 3 months of advanced training here, I crossed 1500. The game analysis sessions are next level."</p>
-          <div class="testi-author">Rohit Menon</div>
-          <div class="testi-role">Adult Learner · Advanced Batch</div>
-        </div>
-        <div class="testi-card">
-          <div class="testi-stars">★★★★★</div>
-          <p class="testi-text">"The tournament prep course gave me the mental tools I was missing. I placed 2nd at the Bangalore District Open — the best result of my career."</p>
-          <div class="testi-author">Kavya Nair</div>
-          <div class="testi-role">Competitor · Tournament Prep</div>
-        </div>
-      </div>
-    </div>
+
 
     <!-- CTA -->
     <div class="section section-sm reveal">
@@ -1501,13 +1474,13 @@ footer {
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="logo" href="#" onclick="nav('home')">
-          <div class="logo-icon">♞</div>
+          <div class="logo-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" width="42" height="42"><defs><linearGradient id="bgG2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#0e0e16"/><stop offset="100%" style="stop-color:#1a1a28"/></linearGradient><linearGradient id="goldG2" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:#f5d57a"/><stop offset="55%" style="stop-color:#d4a017"/><stop offset="100%" style="stop-color:#a07800"/></linearGradient><filter id="glow2"><feGaussianBlur stdDeviation="1.5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter></defs><rect width="52" height="52" rx="12" fill="url(#bgG2)"/><rect x="2" y="2" width="48" height="48" rx="10" fill="none" stroke="#d4a017" stroke-width="1" opacity="0.6"/><rect x="4" y="4" width="5" height="5" fill="#d4a017" opacity="0.12"/><rect x="9" y="4" width="5" height="5" fill="#d4a017" opacity="0.06"/><rect x="4" y="9" width="5" height="5" fill="#d4a017" opacity="0.06"/><rect x="9" y="9" width="5" height="5" fill="#d4a017" opacity="0.12"/><rect x="24.5" y="5" width="3" height="9" rx="1.5" fill="url(#goldG2)" filter="url(#glow2)"/><rect x="21" y="8" width="10" height="3" rx="1.5" fill="url(#goldG2)" filter="url(#glow2)"/><text x="26" y="42" text-anchor="middle" font-family="Cinzel Decorative, Georgia, serif" font-size="30" font-weight="700" fill="url(#goldG2)" filter="url(#glow2)">G</text></svg></div>
           <div class="logo-text"><span class="brand">GUPTA</span><span class="sub">Chess Classes</span></div>
         </a>
         <p>Nurturing strategic minds and champions in Bangalore. Your journey to chess mastery starts here.</p>
         <div class="social-links">
-          <a class="social-link" href="#" title="Facebook">𝓯</a>
-          <a class="social-link" href="#" title="Instagram">📷</a>
+          <a class="social-link" href="https://www.facebook.com/learn.chess.with.purvi" target="_blank" rel="noopener" title="Facebook">𝓯</a>
+          <a class="social-link" href="https://www.instagram.com/chess_with_purvi_6_years_old" target="_blank" rel="noopener" title="Instagram">📷</a>
           <a class="social-link" href="#" title="YouTube">▶</a>
           <a class="social-link" href="https://wa.me/918660813472" target="_blank" title="WhatsApp">💬</a>
         </div>
