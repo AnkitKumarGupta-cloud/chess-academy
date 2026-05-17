@@ -587,6 +587,19 @@ body {
   font-size:0.72rem; color:#52c478; font-weight:700;
   letter-spacing:0.06em; text-transform:uppercase;
 }
+.pc-starting {
+  font-size:0.82rem; color:rgba(245,239,224,0.6);
+  font-weight:400; letter-spacing:0.04em;
+  margin-bottom:6px; padding:10px 14px;
+  background:rgba(201,168,76,0.07);
+  border:1px solid rgba(201,168,76,0.18);
+  border-radius:var(--radius);
+  display:inline-block;
+}
+.pc-starting span {
+  font-family:'Cinzel',serif; font-size:1.15rem;
+  font-weight:700; color:var(--gold); margin-left:3px;
+}
 .pc-desc {
   font-size:0.82rem; color:rgba(245,239,224,0.52);
   line-height:1.6; font-weight:300; margin-top:10px;
@@ -634,11 +647,29 @@ body {
 
 /* pricing comparison note */
 .pricing-note {
-  text-align:center; padding:28px 20px 0;
+  text-align:center; padding:16px 20px 0;
   font-size:0.83rem; color:rgba(245,239,224,0.45);
   line-height:1.7; font-weight:300;
 }
 .pricing-note strong { color:var(--gold); font-weight:700; }
+
+/* single unified starting price */
+.pricing-from {
+  display:flex; align-items:center; justify-content:center; gap:10px;
+  margin:32px auto 0; padding:18px 40px;
+  background:linear-gradient(135deg,rgba(201,168,76,0.1),rgba(201,168,76,0.04));
+  border:1px solid rgba(201,168,76,0.3);
+  border-radius:12px; max-width:420px;
+  white-space:nowrap;
+}
+.pf-price {
+  font-family:'Cinzel',serif; font-size:1.7rem;
+  font-weight:700; color:var(--gold); line-height:1;
+}
+.pf-sub {
+  font-size:0.8rem; color:var(--gray); letter-spacing:0.1em;
+  text-transform:uppercase; align-self:flex-end; padding-bottom:3px;
+}
 
 /* schedule table — unchanged classes below */
 .schedule-wrap { overflow-x:auto; }
@@ -722,7 +753,7 @@ body {
    ABOUT PAGE
 ══════════════════════════════════════════════ */
 .coaches-grid {
-  display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:16px;
+  display:grid; grid-template-columns:repeat(3,1fr); gap:16px;
 }
 .coach-card {
   background:var(--dark2); border:1px solid rgba(201,168,76,0.12);
@@ -1066,7 +1097,7 @@ footer {
   #hero-inner { grid-template-columns: 1fr 260px; gap:24px; }
   .hero-photo-showcase .showcase-img-top img,
   .hero-photo-showcase .showcase-img-bottom img { height:160px; }
-  .coaches-grid { grid-template-columns: repeat(2,1fr); }
+  .coaches-grid { grid-template-columns: repeat(3,1fr); }
 }
 
 /* ═══════════════════════════════════════════════
@@ -1419,6 +1450,23 @@ footer {
             <span class="coach-exp">5+ Yrs Experience</span>
           </div>
         </div>
+
+        <div class="coach-card">
+          <div class="coach-photo" style="padding:0;overflow:hidden;background:linear-gradient(135deg,#1a1410,#2e2620);height:260px;display:flex;align-items:center;justify-content:center;position:relative;">
+              <div style="text-align:center;z-index:1;">
+                <div style="width:110px;height:110px;border-radius:50%;background:linear-gradient(135deg,rgba(201,168,76,0.18),rgba(201,168,76,0.06));border:2px solid rgba(201,168,76,0.35);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:52px;box-shadow:0 0 32px rgba(201,168,76,0.12);">♜</div>
+                <div style="font-family:'Cinzel',serif;font-size:0.72rem;letter-spacing:0.16em;color:rgba(201,168,76,0.7);text-transform:uppercase;">Business Coordinator</div>
+              </div>
+              <div style="position:absolute;inset:0;background:repeating-conic-gradient(rgba(201,168,76,0.03) 0% 25%,transparent 0% 50%);background-size:40px 40px;pointer-events:none;"></div>
+            </div>
+          <div class="coach-body">
+            <h3>Sindhu Vegi</h3>
+            <div class="coach-title">Business Coordinator</div>
+            <p class="coach-bio">Manages academy operations, student enrollments, and scheduling. Ensures every student gets a smooth and seamless experience from inquiry to learning.</p>
+            <div class="coach-stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <span class="coach-exp">Dedicated & Organised</span>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -1525,19 +1573,11 @@ footer {
       <div style="text-align:center;margin-bottom:12px" class="reveal">
         <div class="section-tag" style="justify-content:center">Our Programs</div>
         <h2 class="section-title">Chess Courses &amp; Pricing</h2>
-        <p class="section-sub" style="margin:0 auto">From absolute beginners to tournament-ready players — transparent pricing, starting at just ₹200/class. All courses include monthly assessments and a free demo class.</p>
+        <p class="section-sub" style="margin:0 auto">From absolute beginners to tournament-ready players — expert coaching tailored to your level. All courses include monthly assessments and a free demo class.</p>
         <div class="divider" style="margin:14px auto 28px"></div>
       </div>
 
-      <!-- Billing toggle -->
-      <div style="text-align:center" class="reveal">
-        <div class="billing-toggle">
-          <span id="lbl-per-class" class="active">Per Class</span>
-          <div class="toggle-pill" id="billing-pill" onclick="toggleBilling()"></div>
-          <span id="lbl-monthly">Monthly</span>
-          <span class="save-badge">Save 20%</span>
-        </div>
-      </div>
+
 
       <!-- Pricing Cards -->
       <div class="pricing-grid reveal">
@@ -1550,13 +1590,6 @@ footer {
             </div>
             <div class="pc-level">Beginner</div>
             <div class="pc-name">Foundation</div>
-            <div class="pc-price">
-              <span class="pc-currency">₹</span>
-              <span class="pc-amount" id="price-b">200</span>
-              <span class="pc-period" id="period-b">/class</span>
-            </div>
-            <div class="pc-original" id="orig-b" style="display:none">₹250/class</div>
-            <div class="pc-saving" id="save-b" style="display:none">🎉 Save ₹50 per class</div>
             <div class="pc-desc">Perfect for ages 6 and above with no prior chess experience. Learn piece movements, notation &amp; basic checkmates.</div>
           </div>
 
@@ -1584,13 +1617,6 @@ footer {
             </div>
             <div class="pc-level">Intermediate</div>
             <div class="pc-name">Mastery</div>
-            <div class="pc-price">
-              <span class="pc-currency">₹</span>
-              <span class="pc-amount" id="price-i">350</span>
-              <span class="pc-period" id="period-i">/class</span>
-            </div>
-            <div class="pc-original" id="orig-i" style="display:none">₹450/class</div>
-            <div class="pc-saving" id="save-i" style="display:none">🎉 Save ₹100 per class</div>
             <div class="pc-desc">For players who know the rules and want to seriously improve. Strategy, tactics &amp; opening repertoire development.</div>
           </div>
 
@@ -1617,13 +1643,6 @@ footer {
             </div>
             <div class="pc-level">Advanced</div>
             <div class="pc-name">Pro &amp; Rated</div>
-            <div class="pc-price">
-              <span class="pc-currency">₹</span>
-              <span class="pc-amount" id="price-a">600</span>
-              <span class="pc-period" id="period-a">/class</span>
-            </div>
-            <div class="pc-original" id="orig-a" style="display:none">₹750/class</div>
-            <div class="pc-saving" id="save-a" style="display:none">🎉 Save ₹150 per class</div>
             <div class="pc-desc">Grandmaster techniques &amp; engine analysis for rated players (ELO 1200+). Small batches for personalised attention.</div>
           </div>
 
@@ -1650,13 +1669,6 @@ footer {
             </div>
             <div class="pc-level">Elite</div>
             <div class="pc-name">Tournament 1-on-1</div>
-            <div class="pc-price">
-              <span class="pc-currency">₹</span>
-              <span class="pc-amount" id="price-t">1,000</span>
-              <span class="pc-period" id="period-t">/session</span>
-            </div>
-            <div class="pc-original" id="orig-t" style="display:none">₹1,250/session</div>
-            <div class="pc-saving" id="save-t" style="display:none">🎉 Save ₹250/session</div>
             <div class="pc-desc">Fully personalised 1-on-1 coaching for serious tournament aspirants. Flexible schedule, tailored entirely to your game.</div>
           </div>
 
@@ -1677,53 +1689,21 @@ footer {
 
       </div><!-- /pricing-grid -->
 
+      <div class="pricing-from reveal">
+        <span class="pf-price">Starting from ₹200</span>
+        <span class="pf-sub">per class</span>
+      </div>
+
       <div class="pricing-note reveal">
-        <strong>All prices are per class / session.</strong> Monthly packages available at 20% discount when paid upfront.<br>
-        Prices shown are for online classes. In-person Bangalore classes may vary slightly · GST included · No hidden fees
+        <strong>Exact pricing and packages will be shared after your free consultation.</strong><br>
+        All courses include a free demo class · Online &amp; in-person Bangalore options available · No hidden fees
       </div>
 
     </div>
   </div>
 </div>
 
-<script>
-/* ── BILLING TOGGLE ── */
-var billingMonthly = false;
 
-var prices = {
-  b: { perClass: '200',   monthly: '1,600',  origClass: '250',   origMonth: '2,000',  saveCls: '₹50 per class',   saveMth: '₹400/month'  },
-  i: { perClass: '350',   monthly: '2,800',  origClass: '450',   origMonth: '3,600',  saveCls: '₹100 per class',  saveMth: '₹800/month'  },
-  a: { perClass: '600',   monthly: '4,800',  origClass: '750',   origMonth: '6,000',  saveCls: '₹150 per class',  saveMth: '₹1,200/month'},
-  t: { perClass: '1,000', monthly: '8,000',  origClass: '1,250', origMonth: '10,000', saveCls: '₹250/session',    saveMth: '₹2,000/month'}
-};
-
-function toggleBilling() {
-  billingMonthly = !billingMonthly;
-  var pill = document.getElementById('billing-pill');
-  pill.classList.toggle('monthly', billingMonthly);
-  document.getElementById('lbl-per-class').classList.toggle('active', !billingMonthly);
-  document.getElementById('lbl-monthly').classList.toggle('active', billingMonthly);
-
-  ['b','i','a','t'].forEach(function(k){
-    var p = prices[k];
-    var amt = document.getElementById('price-'+k);
-    var per = document.getElementById('period-'+k);
-    var orig = document.getElementById('orig-'+k);
-    var save = document.getElementById('save-'+k);
-    if (billingMonthly) {
-      amt.textContent = p.monthly;
-      per.textContent = '/month';
-      orig.textContent = '₹'+p.origMonth+'/month';
-      save.textContent = '🎉 Save '+p.saveMth;
-      orig.style.display = ''; save.style.display = '';
-    } else {
-      amt.textContent = p.perClass;
-      per.textContent = k === 't' ? '/session' : '/class';
-      orig.style.display = 'none'; save.style.display = 'none';
-    }
-  });
-}
-</script>
 
 <!-- ══════════════════════════════════════════════
      PAGE: BLOG
@@ -1911,7 +1891,7 @@ function toggleBilling() {
         <p>Nurturing strategic minds and champions in Bangalore. Your journey to chess mastery starts here.</p>
         <div class="social-links">
           <!-- YouTube -->
-          <a class="social-link social-yt" href="https://www.youtube.com/@ChesswithPurvi-pn4tm" target="_blank" rel="noopener" title="YouTube – Chess with Purvi">
+          <a class="social-link social-yt" href="https://www.youtube.com/@chesswithpurvi" target="_blank" rel="noopener" title="YouTube – Chess with Purvi">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
           </a>
           <!-- Facebook -->
